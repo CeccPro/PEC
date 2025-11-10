@@ -1,0 +1,14 @@
+
+.eb-bg-dark {
+    background-color:#212121ff;
+}
+.green-container {
+    background-color: #93c47dff;
+    border: 1px solid #2d8d2d;
+    border-radius: 30px;
+}
+
+.title-light-green {
+   color: #b6d7a8;
+   font-size: 70px;
+}
