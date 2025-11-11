@@ -5,10 +5,14 @@
 .green-container {
     background-color: #93c47dff;
     border: 1px solid #2d8d2d;
-    border-radius: 30px;
+    border-radius: 40px;
 }
 
 .title-light-green {
    color: #b6d7a8;
    font-size: 70px;
+}
+
+.w-35 {
+    width: 35%;
 }
