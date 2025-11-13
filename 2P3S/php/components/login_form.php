@@ -14,6 +14,13 @@ class LoginForm {
             'include_method' => 'variable',
             'elements' => [
                 [
+                    'type' => 'h1',
+                    'text' => 'Welcome to EcoBlog',
+                    'attributes' => [
+                        ['class', 'text-center mb-4 text-success']
+                    ]
+                ],
+                [
                     'type' => 'label',
                     'text' => 'Username:',
                     'attributes' => [
@@ -53,14 +60,14 @@ class LoginForm {
                     'text' => 'Login',
                     'attributes' => [
                         ['type', 'submit'],
-                        ['class', 'btn btn-success mt-3']
+                        ['class', 'btn btn-success mt-3 w-25 text-center mx-auto']
                     ]
                 ]
             ]
         ];
     }
 
-    public function render(): string {
+    public function render(): void {
         $formConfig = $this->getConfig();
         $form = new Form($formConfig);
         $form_html = $form->getHtml();
@@ -74,7 +81,7 @@ class LoginForm {
         ];
 
         $container = new Container($container_config);
-        return $container->getHtml();
+        echo $container->getHtml();
     }
 }
 ?>

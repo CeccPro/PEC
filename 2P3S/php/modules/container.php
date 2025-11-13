@@ -1,5 +1,5 @@
 <?php
-// php/components/container.php
+    // php/components/container.php
     // Este componente genera un contenedor HTML usando divs basado en la configuración que se le pasa en la variable $container_config.
 
     
@@ -61,13 +61,8 @@
             return $this->html;
         }
 
-        public function render() {
-            $method = $this->config['include_method'] ?? 'variable';
-            if ($method === 'echo') {
-                echo $this->html;
-                return null;
-            }
-            return $this->html;
+        public function render(): void {
+            echo $this->html;
         }
     }
 ?>

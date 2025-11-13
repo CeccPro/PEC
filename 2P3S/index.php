@@ -7,20 +7,11 @@
         <link rel="stylesheet" href="./css/bootstrap.min.css">  
         <link rel="stylesheet" href="./css/styles.css">
     </head>
-
-    <?php
-        if (isset($_COOKIE['usuario'])) {
-                header('Location: ./home.php');
-        } else {
-                $usuario = null;
-        }
-    ?>
-
     <body>
     <?php
         require_once('./php/components/login_form.php');
         $login = new LoginForm();
-        echo $login->render();
+        $login->render();
     ?>
     </body>
 </html>

@@ -60,6 +60,9 @@
         public function getHtml(): string {
             return $this->html;
         }
-    }
 
+        public function render(): void {
+            echo $this->html;
+        }
+    }
 ?>

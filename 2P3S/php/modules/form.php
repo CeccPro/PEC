@@ -41,7 +41,6 @@
                     $text = $element['text'];
                     $this->html .= "<{$element['type']} {$eAttr}>{$text}</{$element['type']}>";
                 } else {
-                    // self-closing for input-like elements
                     if (in_array(strtolower($element['type']), ['input', 'img', 'br', 'hr', 'meta', 'link'])) {
                         $this->html .= "<{$element['type']} {$eAttr} />";
                     } else {
@@ -57,13 +56,8 @@
             return $this->html;
         }
 
-        public function render() {
-            $method = $this->config['include_method'] ?? 'variable';
-            if ($method === 'echo') {
-                echo $this->html;
-                return null;
-            }
-            return $this->html;
+        public function render(): void {
+            echo $this->html;
         }
     }
 ?>
