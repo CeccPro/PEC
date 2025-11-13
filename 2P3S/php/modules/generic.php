@@ -41,20 +41,50 @@
                 $this->html .= $this->config['text'];
             }
 
+            // Render elements (supports nested elements recursively)
             foreach ($this->config['elements'] ?? [] as $element) {
-                $eAttr = $this->buildAttributes($element['attributes'] ?? []);
-                if (isset($element['text'])) {
-                    $this->html .= "<{$element['type']} {$eAttr}>{$element['text']}</{$element['type']}>";
-                } else {
-                    if (in_array(strtolower($element['type']), ['input', 'img', 'br', 'hr', 'meta', 'link'])) {
-                        $this->html .= "<{$element['type']} {$eAttr} />";
-                    } else {
-                        $this->html .= "<{$element['type']} {$eAttr}></{$element['type']}>";
-                    }
-                }
+                $this->html .= $this->renderElement($element);
             }
 
             $this->html .= "</{$tag}>";
+        }
+
+        /**
+         * Renderiza un elemento (y sus hijos) de forma recursiva.
+         * Acepta keys: type, attributes, text, content_html, elements
+         */
+        protected function renderElement(array $element): string {
+            $type = $element['type'] ?? 'div';
+            $eAttr = $this->buildAttributes($element['attributes'] ?? []);
+            $attrPrefix = $eAttr !== '' ? " {$eAttr}" : '';
+
+            // Texto directo
+            if (isset($element['text'])) {
+                return "<{$type}{$attrPrefix}>{$element['text']}</{$type}>";
+            }
+
+            // Elementos autocerrados
+            if (in_array(strtolower($type), ['input', 'img', 'br', 'hr', 'meta', 'link'])) {
+                return "<{$type}{$attrPrefix} />";
+            }
+
+            // Contenido interno: content_html y elementos hijos
+            $inner = '';
+            if (isset($element['content_html'])) {
+                if (is_array($element['content_html'])) {
+                    foreach ($element['content_html'] as $c) {
+                        $inner .= $c;
+                    }
+                } else {
+                    $inner .= $element['content_html'];
+                }
+            }
+
+            foreach ($element['elements'] ?? [] as $child) {
+                $inner .= $this->renderElement($child);
+            }
+
+            return "<{$type}{$attrPrefix}>{$inner}</{$type}>";
         }
 
         public function getHtml(): string {

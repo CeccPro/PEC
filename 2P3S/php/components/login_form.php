@@ -3,13 +3,13 @@ require_once __DIR__ . '/../modules/form.php';
 require_once __DIR__ . '/../modules/container.php';
 
 class LoginForm {
-    public function getConfig(): array {
-        return [
+    public function getConfig(bool $error): array {
+        $config = [
             'attributes' => [
                 ['class', 'd-flex flex-column w-50 mx-auto mt-5'],
                 ['id', 'loginForm']
             ],
-            'action' => './php/login_handler.php',
+            'action' => './php/utils/login_handler.php',
             'method' => 'POST',
             'include_method' => 'variable',
             'elements' => [
@@ -65,10 +65,23 @@ class LoginForm {
                 ]
             ]
         ];
+
+        if ( $error) {
+            $error_element = [
+                'type' => 'p',
+                'text' => 'Invalid username or password. Please try again.',
+                'attributes' => [
+                    ['class', 'text-danger text-center mb-3']
+                ]
+            ];
+            array_splice($config['elements'], 5, 0, [$error_element]);
+        }
+
+        return $config;
     }
 
-    public function render(): void {
-        $formConfig = $this->getConfig();
+    public function render(bool $error): void {
+        $formConfig = $this->getConfig($error);
         $form = new Form($formConfig);
         $form_html = $form->getHtml();
 

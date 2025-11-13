@@ -34,19 +34,9 @@
             $method = $this->config['method'] ?? 'POST';
 
             $this->html = "<form action=\"{$action}\" method=\"{$method}\" {$attr}>";
-
+            // Render elements (support nested elements recursively)
             foreach ($this->config['elements'] ?? [] as $element) {
-                $eAttr = $this->buildAttributes($element['attributes'] ?? []);
-                if (isset($element['text'])) {
-                    $text = $element['text'];
-                    $this->html .= "<{$element['type']} {$eAttr}>{$text}</{$element['type']}>";
-                } else {
-                    if (in_array(strtolower($element['type']), ['input', 'img', 'br', 'hr', 'meta', 'link'])) {
-                        $this->html .= "<{$element['type']} {$eAttr} />";
-                    } else {
-                        $this->html .= "<{$element['type']} {$eAttr}></{$element['type']}>";
-                    }
-                }
+                $this->html .= $this->renderElement($element);
             }
 
             $this->html .= "</form>";
@@ -58,6 +48,40 @@
 
         public function render(): void {
             echo $this->html;
+        }
+
+        /**
+         * Renderiza un elemento (y sus hijos) de forma recursiva para formularios.
+         */
+        private function renderElement(array $element): string {
+            $type = $element['type'] ?? 'div';
+            $eAttr = $this->buildAttributes($element['attributes'] ?? []);
+            $attrPrefix = $eAttr !== '' ? " {$eAttr}" : '';
+
+            if (isset($element['text'])) {
+                return "<{$type}{$attrPrefix}>{$element['text']}</{$type}>";
+            }
+
+            if (in_array(strtolower($type), ['input', 'img', 'br', 'hr', 'meta', 'link'])) {
+                return "<{$type}{$attrPrefix} />";
+            }
+
+            $inner = '';
+            if (isset($element['content_html'])) {
+                if (is_array($element['content_html'])) {
+                    foreach ($element['content_html'] as $c) {
+                        $inner .= $c;
+                    }
+                } else {
+                    $inner .= $element['content_html'];
+                }
+            }
+
+            foreach ($element['elements'] ?? [] as $child) {
+                $inner .= $this->renderElement($child);
+            }
+
+            return "<{$type}{$attrPrefix}>{$inner}</{$type}>";
         }
     }
 ?>
