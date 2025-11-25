@@ -1,0 +1,267 @@
+/* Variables CSS para el tema verde */
+:root {
+    --primary-green: #198754;
+    --dark-green: #157347;
+    --light-green: #d1e7dd;
+    --accent-green: #20c997;
+    --dark-bg: #212529;
+    --light-bg: #f8f9fa;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Hero section personalizada */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+/* Botones personalizados */
+.btn-success {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: var(--dark-green);
+    border-color: var(--dark-green);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(25, 135, 84, 0.3);
+}
+
+/* Cards con efectos */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Navbar personalizada */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    padding: 0.75rem 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--accent-green) !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.25rem;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--accent-green) !important;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 0.2rem;
+}
+
+.navbar .btn-success {
+        padding: 0.5rem 1rem;
+        font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navbar .btn-success:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+}
+
+.navbar .dropdown-menu {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+}
+
+/* Responsive para móviles */
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .navbar-nav .nav-link:last-child {
+        border-bottom: none;
+    }
+    
+    .navbar .btn-success {
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+}
+
+/* Separador visual entre secciones del navbar */
+.navbar-nav .nav-item.separator::after {
+    content: '|';
+    color: rgba(255, 255, 255, 0.3);
+    margin: 0 0.5rem;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-item.separator::after {
+        display: none;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg) !important;
+}
+
+footer a:hover {
+    color: var(--accent-green) !important;
+    transition: color 0.3s ease;
+}
+
+/* Placeholders para imágenes */
+.image-placeholder {
+    background: linear-gradient(45deg, #f8f9fa 25%, transparent 25%), 
+                linear-gradient(-45deg, #f8f9fa 25%, transparent 25%), 
+                linear-gradient(45deg, transparent 75%, #f8f9fa 75%), 
+                linear-gradient(-45deg, transparent 75%, #f8f9fa 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    border: 2px dashed #dee2e6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Modal personalizado */
+.modal-content {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.modal-header.bg-success {
+    background-color: var(--primary-green) !important;
+}
+
+/* Formularios */
+.form-control:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+
+/* Utilidades personalizadas */
+.text-success {
+    color: var(--primary-green) !important;
+}
+
+.bg-success {
+    background-color: var(--primary-green) !important;
+}
+
+.border-success {
+    border-color: var(--primary-green) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 60vh;
+        text-align: center;
+    }
+    
+    .hero-section .display-4 {
+        font-size: 2rem;
+    }
+    
+    .hero-section .lead {
+        font-size: 1rem;
+    }
+}
+
+/* Loading spinner */
+.spinner-border-success {
+    color: var(--primary-green);
+}
+
+/* Social links hover effect */
+.social-links a {
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+/* Progress bars verdes */
+.progress-bar {
+    background-color: var(--primary-green);
+}
+
+/* Badges verdes */
+.badge-success {
+    background-color: var(--primary-green);
+}
+
+/* Alerts personalizados */
+.alert-success {
+    background-color: rgba(25, 135, 84, 0.1);
+    border-color: var(--primary-green);
+    color: var(--dark-green);
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos para elementos interactivos */
+.interactive-element {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.interactive-element:hover {
+    color: var(--primary-green);
+}
+
+/* TODO: Agregar más estilos específicos para otras páginas cuando se creen */
