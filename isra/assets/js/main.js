@@ -5,6 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeRegisterForm();
     initializeAnimations();
     initializeTooltips();
+    // Animar el panel de pestaña activo al cargar la página
+    const activePane = document.querySelector('.tab-pane.show.active');
+    if (activePane) {
+        activePane.classList.add('fade-in-up');
+        setTimeout(() => activePane.classList.remove('fade-in-up'), 700);
+    }
     
     console.log('🌱 Reforestación Verde iniciada correctamente');
 });
@@ -152,11 +158,25 @@ function initializeAnimations() {
         });
     }, observerOptions);
     
-    // Observar elementos con clase 'animate-on-scroll'
-    document.querySelectorAll('.card, .hero-section h1, .hero-section p').forEach(el => {
+    // Observar elementos con clase 'animate-on-scroll' y las pestañas del proyecto
+    document.querySelectorAll('.card, .hero-section h1, .hero-section p, .tab-pane').forEach(el => {
         observer.observe(el);
     });
 }
+
+// Animación al mostrar una pestaña: agregar clase fade-in-up al nuevo contenido visible
+document.addEventListener('shown.bs.tab', function(e) {
+    const targetSelector = e.relatedTarget ? e.relatedTarget.getAttribute('data-bs-target') : null;
+    const shownSelector = e.target ? e.target.getAttribute('data-bs-target') : null;
+    if (shownSelector) {
+        const pane = document.querySelector(shownSelector);
+        if (pane) {
+            pane.classList.add('fade-in-up');
+            // Remover la clase después de la animación para permitir reusarla
+            setTimeout(() => pane.classList.remove('fade-in-up'), 700);
+        }
+    }
+});
 
 // Inicializar tooltips de Bootstrap
 function initializeTooltips() {

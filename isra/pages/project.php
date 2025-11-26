@@ -41,31 +41,75 @@
     <div class="container">
         <h2 class="display-6 fw-bold text-center mb-5"><?php echo $translations['project_integration_disciplines']; ?></h2>
         
-        <div class="row g-4">
-            <?php foreach ($projectInfo['subjects'] as $key => $subject): ?>
-            <div class="col-lg-6 col-xl-4 mb-4">
-                <div class="card h-100 shadow-sm border-0">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="bg-success rounded-circle p-3 me-3">
-                                <?php 
-                                $icons = [
-                                    'humanidades' => 'bi-people',
-                                    'matematicas' => 'bi-calculator',
-                                    'programacion' => 'bi-code-slash',
-                                    'ecosistemas' => 'bi-tree',
-                                    'lengua' => 'bi-chat-text'
-                                ];
-                                ?>
-                                <i class="bi <?php echo $icons[$key]; ?> text-white fs-4"></i>
+        <div class="row">
+            <?php $icons = [
+                'humanidades' => 'bi-people',
+                'matematicas' => 'bi-calculator',
+                'programacion' => 'bi-code-slash',
+                'ecosistemas' => 'bi-tree',
+                'lengua' => 'bi-chat-text'
+            ]; ?>
+            <div class="col-lg-4">
+                <div class="nav flex-column nav-pills me-3" id="subjects-tab" role="tablist" aria-orientation="vertical">
+                    <?php $first = true; foreach ($projectInfo['subjects'] as $key => $subject): ?>
+                        <button class="nav-link d-flex align-items-center mb-2 <?php echo $first ? 'active' : ''; ?>" id="tab-<?php echo $key; ?>" data-bs-toggle="pill" data-bs-target="#tabpane-<?php echo $key; ?>" type="button" role="tab" aria-controls="tabpane-<?php echo $key; ?>" aria-selected="<?php echo $first ? 'true' : 'false'; ?>">
+                            <span class="rounded-circle me-2 d-flex align-items-center justify-content-center bg-success text-white" style="width:130px;height:40px;">
+                                <i class="bi <?php echo $icons[$key]; ?>"></i>
+                            </span>
+                            <div class="text-start">
+                                <strong><?php echo $subject['title']; ?></strong>
+                                <div class="small text-muted"><?php echo $subject['content']; ?></div>
                             </div>
-                            <h4 class="card-title mb-0"><?php echo $translations['subject_' . $key . '_title']; ?></h4>
-                        </div>
-                        <p class="card-text"><?php echo $translations['subject_' . $key . '_content']; ?></p>
-                    </div>
+                        </button>
+                    <?php $first = false; endforeach; ?>
                 </div>
             </div>
-            <?php endforeach; ?>
+            <div class="col-lg-8">
+                <div class="tab-content" id="subjects-tabContent">
+                    <?php $first = true; foreach ($projectInfo['subjects'] as $key => $subject): ?>
+                        <div class="tab-pane fade <?php echo $first ? 'show active' : ''; ?>" id="tabpane-<?php echo $key; ?>" role="tabpanel" aria-labelledby="tab-<?php echo $key; ?>">
+                            <div class="card border-0 shadow-sm p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="rounded-circle d-flex align-items-center justify-content-center bg-success text-white me-3" style="width:90px;height:60px;">
+                                        <i class="bi <?php echo $icons[$key]; ?> fs-1"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="mb-1"><?php echo $subject['title']; ?></h3>
+                                        <?php if (!empty($subject['role'])):?><p class="mb-0 text-success fw-semibold"><?php echo $subject['role']; ?></p><?php endif; ?>
+                                    </div>
+                                </div>
+                                <p class="text-muted"><?php echo $subject['content']; ?></p>
+                                <?php if (!empty($subject['details'])): ?>
+                                    <p class="text-muted mb-2"><?php echo $subject['details']; ?></p>
+                                <?php endif; ?>
+                                <?php if (!empty($subject['tasks']) && is_array($subject['tasks'])): ?>
+                                    <h6 class="text-success"><?php echo $translations['subject_tasks_title'] ?? 'Actividades'; ?></h6>
+                                    <ul class="mb-0 ms-3">
+                                        <?php foreach ($subject['tasks'] as $task): ?>
+                                            <li><?php echo $task; ?></li>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                <?php endif; ?>
+
+                                <?php if (!empty($subject['objectives'])): ?>
+                                    <h6 class="mt-3 text-success"><?php echo $translations['subject_objectives_title'] ?? 'Objetivos'; ?></h6>
+                                    <p class="mb-0"><?php echo $subject['objectives']; ?></p>
+                                <?php endif; ?>
+
+                                <?php if (!empty($subject['methodology'])): ?>
+                                    <h6 class="mt-3 text-success"><?php echo $translations['subject_methodology_title'] ?? 'Metodología'; ?></h6>
+                                    <p class="mb-0"><?php echo $subject['methodology']; ?></p>
+                                <?php endif; ?>
+
+                                <?php if (!empty($subject['deliverables'])): ?>
+                                    <h6 class="mt-3 text-success"><?php echo $translations['subject_deliverables_title'] ?? 'Entregables'; ?></h6>
+                                    <p class="mb-0"><?php echo $subject['deliverables']; ?></p>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    <?php $first = false; endforeach; ?>
+                </div>
+            </div>
         </div>
     </div>
 </section>

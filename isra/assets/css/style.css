@@ -75,6 +75,33 @@ body {
     font-weight: 600;
 }
 
+/* Estilos para pestañas (tabs) en la página de proyecto */
+.nav-pills .nav-link {
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    color: #333;
+}
+
+.nav-pills .nav-link.active {
+    background-color: rgba(25, 135, 84, 0.12);
+    color: var(--dark-green) !important;
+    border-left: 3px solid var(--primary-green);
+}
+
+.tab-pane {
+    min-height: 220px;
+}
+
+.tab-pane .card {
+    transition: none; /* evitar efecto hover en el contenedor principal */
+}
+
+.nav-pills .nav-link small, .nav-pills .nav-link .small {
+    font-size: 0.85rem;
+    color: #6c757d;
+    display:block;
+}
+
 .navbar-nav .nav-item {
     margin: 0 0.2rem;
 }
