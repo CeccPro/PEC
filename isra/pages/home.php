@@ -17,7 +17,33 @@
             <div class="col-lg-6">
                 <div class="text-center">
                     <div class="" style="height: 400px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
-                        <img src="https://img.freepik.com/foto-gratis/bosque-verde_1160-916.jpg?semt=ais_hybrid&w=740&q=80" alt="<?php echo $translations['hero_image_alt'] ?? 'Bosque Verde'; ?>" class="img-fluid rounded shadow">
+                        <!-- Carousel de placeholders con colores distintos -->
+                        <div id="heroCarousel" class="carousel slide w-100 h-100" data-bs-ride="carousel" aria-label="<?php echo $translations['hero_carousel_label'] ?? 'Carrusel de imágenes'; ?>">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner h-100">
+                                <div class="carousel-item active h-100">
+                                    <img src="https://placehold.co/600x400/4aa44a/FFFFFF/?text=Placeholder+1" class="d-block w-100 h-100 img-fluid object-fit-cover rounded shadow" alt="<?php echo $translations['hero_image_alt'] ?? 'Bosque Verde'; ?> - 1" style="object-fit: cover;">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="https://placehold.co/600x400/2e8b57/FFFFFF/?text=Placeholder+2" class="d-block w-100 h-100 img-fluid object-fit-cover rounded shadow" alt="<?php echo $translations['hero_image_alt'] ?? 'Bosque Verde'; ?> - 2" style="object-fit: cover;">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="https://placehold.co/600x400/66cdaa/FFFFFF/?text=Placeholder+3" class="d-block w-100 h-100 img-fluid object-fit-cover rounded shadow" alt="<?php echo $translations['hero_image_alt'] ?? 'Bosque Verde'; ?> - 3" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
