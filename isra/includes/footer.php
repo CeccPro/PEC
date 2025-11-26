@@ -39,7 +39,7 @@
                 </p>
                 <p class="text-light mb-1">
                     <i class="bi bi-telephone me-2"></i>
-                    +52 1 55 4636 7828
+                    [Placeholder]
                 </p>
                 <p class="text-light">
                     <i class="bi bi-geo-alt me-2"></i>

@@ -120,7 +120,7 @@
                             </div>
                             <h5 class="text-success"><?php echo $translations['contact_phone_title']; ?></h5>
                             <p class="text-muted mb-0">
-                                +52 1 55 4636 7828<br>
+                                [Placeholder]<br>
                                 <small>Lun-Vie: 7:00 AM - 3:00 PM</small>
                             </p>
                         </div>
