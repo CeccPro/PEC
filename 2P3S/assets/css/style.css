@@ -1,0 +1,425 @@
+:root {
+    --brand: #107a4a; /* principal */
+    --brand-dark: #0b5e36;
+    --brand-light: #9dffba;
+    --muted: #6c757d;
+    --bg: #f7faf7;
+    --text: #222;
+    --card-bg: #ffffff;
+    --border: #e6ece6;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Hero section personalizada */
+.hero-section {
+    background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+/* Botones personalizados */
+.btn-success {
+    background-color: var(--brand);
+    border-color: var(--brand);
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: var(--brand-dark);
+    border-color: var(--brand-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(25, 135, 84, 0.3);
+}
+
+/* Cards con efectos */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-gradient, .register-gradient {
+    background: linear-gradient(135deg, var(--brand), var(--brand-light));
+    color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Navbar personalizada */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.hero-section {
+    background: linear-gradient(180deg, var(--brand-light), rgba(255,255,255,0));
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    background: linear-gradient(180deg, var(--brand-light), rgba(255,255,255,0));
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+.navbar-nav .nav-link:hover {
+    color: var(--brand-light) !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.25rem;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--accent-green) !important;
+    background-color: var(--brand);
+    border-color: var(--brand);
+    transition: all .25s ease;
+/* Estilos para pestañas (tabs) en la página de proyecto */
+.nav-pills .nav-link {
+    border-radius: 0.5rem;
+    background-color: var(--brand-dark);
+    border-color: var(--brand-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(6, 92, 50, 0.12);
+.nav-pills .nav-link.active {
+    background-color: rgba(16, 122, 74, 0.12);
+    color: var(--brand-dark) !important;
+    border-left: 3px solid var(--brand);
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.tab-pane {
+    min-height: 220px;
+}
+
+.tab-pane .card {
+    transition: none; /* evitar efecto hover en el contenedor principal */
+}
+
+.nav-pills .nav-link small, .nav-pills .nav-link .small {
+.main-nav .nav-link:hover {
+    color: var(--brand-dark) !important;
+    background-color: rgba(16, 122, 74, 0.05);
+    border-radius: 0.25rem;
+}
+    font-size: 0.85rem;
+    color: #6c757d;
+    display:block;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 0.2rem;
+.nav-pills .nav-link.active {
+    background-color: rgba(16, 122, 74, 0.08);
+    color: var(--brand-dark) !important;
+    border-left: 3px solid var(--brand);
+}
+}
+
+.navbar .btn-success {
+        padding: 0.5rem 1rem;
+        font-weight: 500;
+    transition: all 0.3s ease;
+}
+.modal-content {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.navbar .btn-success:hover {
+    border-color: var(--brand);
+    box-shadow: 0 0 0 0.15rem rgba(16,122,74,0.12);
+}
+
+.navbar .dropdown-menu {
+    border: none;
+    color: var(--brand) !important;
+    border-radius: 0.5rem;
+}
+
+    background-color: var(--brand) !important;
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+    background-color: var(--brand) !important;
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0;
+/* Header Layout */
+.site-header {
+    background: #fff;
+}
+.site-header .main-nav .nav-link {
+    color: var(--muted);
+    font-weight: 500;
+}
+.site-header .main-nav .nav-link.active {
+    color: var(--brand-dark) !important;
+}
+
+/* Footer */
+.site-footer {
+    background: linear-gradient(180deg, #0b5e36 0%, #093e28 100%);
+    color: #fff;
+}
+.site-content {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+.page-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.page-section .h1, .page-section .display-5, .page-section h2, .page-section h3 {
+    color: var(--brand-dark);
+}
+.site-title { color: var(--brand-dark); }
+
+/* Brand accent for links */
+a { color: var(--brand-dark); }
+a:hover { color: var(--brand); }
+
+/* Ghost button for subtle action links in header */
+.btn-ghost {
+    background: transparent;
+    border: none;
+    color: var(--muted);
+    padding: 0.35rem 0.5rem;
+}
+.btn-ghost:hover {
+    color: var(--brand-dark);
+    text-decoration: none;
+}
+.site-footer a { color: #e7f6ec; }
+.site-footer .btn-outline-light { border-color: rgba(255,255,255,0.08); color: #fff; }
+
+/* Card and content styles */
+.card-feature { border-radius: 10px; }
+.icon-circle { width: 64px; height: 64px; border-radius: 50%; }
+
+/* Responsive: large screens */
+@media (min-width: 992px) {
+    .site-header .main-nav { margin-left: 1.5rem; }
+}
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .navbar-nav .nav-link:last-child {
+        border-bottom: none;
+    }
+    
+    .navbar .btn-success {
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+}
+
+/* Separador visual entre secciones del navbar */
+.navbar-nav .nav-item.separator::after {
+    content: '|';
+    color: rgba(255, 255, 255, 0.3);
+    margin: 0 0.5rem;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-item.separator::after {
+        display: none;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg) !important;
+}
+
+footer a:hover {
+    color: var(--brand-light) !important;
+    transition: color 0.3s ease;
+}
+
+/* Placeholders para imágenes */
+.image-placeholder {
+    background: linear-gradient(45deg, #f8f9fa 25%, transparent 25%), 
+                linear-gradient(-45deg, #f8f9fa 25%, transparent 25%), 
+                linear-gradient(45deg, transparent 75%, #f8f9fa 75%), 
+                linear-gradient(-45deg, transparent 75%, #f8f9fa 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    border: 2px dashed #dee2e6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Redesigned hero and cards */
+.hero-section-modern {
+    background: linear-gradient(180deg, rgba(244,247,244,0.9), rgba(244,247,244,0.95));
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.hero-section-modern .display-5 {
+    color: var(--brand-dark);
+}
+.hero-card {
+    border-radius: 12px;
+    overflow: hidden;
+}
+.hero-card img {
+    object-fit: cover;
+    height: 100%;
+}
+.card-feature .icon-circle {
+    width: 72px;
+    height: 72px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.25rem;
+}
+.card-feature h5 {
+    font-weight: 600;
+}
+.info-box {
+    background: #fff;
+}
+.stat {
+    min-width: 140px;
+}
+
+/* Make hero and cards more modern on small screens */
+@media (max-width: 991.98px) {
+    .hero-section-modern {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+/* Modal personalizado */
+.modal-content {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.modal-header.bg-success {
+    background-color: var(--brand) !important;
+}
+
+/* Formularios */
+.form-control:focus {
+    border-color: var(--brand);
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+
+/* Utilidades personalizadas */
+.text-success {
+    color: var(--brand) !important;
+}
+
+.bg-success {
+    background-color: var(--brand) !important;
+}
+
+.border-success {
+    border-color: var(--brand) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 60vh;
+        text-align: center;
+    }
+    
+    .hero-section .display-4 {
+        font-size: 2rem;
+    }
+    
+    .hero-section .lead {
+        font-size: 1rem;
+    }
+}
+
+/* Loading spinner */
+.spinner-border-success {
+    color: var(--brand);
+}
+
+/* Social links hover effect */
+.social-links a {
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+/* Progress bars verdes */
+.progress-bar {
+    background-color: var(--primary-green);
+}
+
+/* Badges verdes */
+.badge-success {
+    background-color: var(--primary-green);
+}
+
+/* Alerts personalizados */
+.alert-success {
+    background-color: rgba(25, 135, 84, 0.1);
+    border-color: var(--primary-green);
+    color: var(--dark-green);
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos para elementos interactivos */
+.interactive-element {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.interactive-element:hover {
+    color: var(--primary-green);
+}
+
+/* TODO: Agregar más estilos específicos para otras páginas cuando se creen */

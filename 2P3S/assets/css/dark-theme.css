@@ -1,0 +1,92 @@
+/* Dark Theme Overrides */
+:root {
+    --bg-dark: #0b0f12;
+    --bg-elev: #0f1417;
+    --panel: #15191c;
+    --muted-light: #9aa3a6;
+    --text-light: #e6eef0;
+    --accent: #1fbf73;
+    --accent-2: #00b887;
+    --danger: #e74c3c;
+    --glass: rgba(255,255,255,0.02);
+}
+
+body.dark-theme {
+    background: linear-gradient(180deg,var(--bg-dark),var(--bg-elev));
+    color: var(--text-light);
+}
+
+/* Header */
+.site-header.dark {
+    background: linear-gradient(90deg, rgba(20,24,25,0.85), rgba(10,12,13,0.95));
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.site-header.dark .navbar-brand span { color: var(--text-light); }
+.site-header.dark .main-nav .nav-link { color: var(--muted-light); }
+.site-header.dark .main-nav .nav-link.active, .site-header.dark .main-nav .nav-link:hover { color: var(--accent); }
+
+/* Buttons */
+.btn-dark-accent {
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    color: #071012;
+    border: none;
+    box-shadow: 0 6px 20px rgba(14, 154, 111, 0.15);
+}
+.btn-dark-outline {
+    color: var(--text-light);
+    border: 1px solid rgba(255,255,255,0.06);
+    background: transparent;
+}
+
+/* Cards */
+.card-dark {
+    background: linear-gradient(180deg,var(--panel), rgba(21,25,28,0.8));
+    border: 1px solid rgba(255,255,255,0.03);
+    color: var(--text-light);
+}
+
+/* Hero */
+.hero-dark {
+    min-height: 70vh;
+    padding: 4rem 0;
+    background: radial-gradient(ellipse at right, rgba(31,191,115,0.08) 0%, transparent 25%), linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0));
+}
+.hero-dark .display-5 { color: var(--text-light); }
+.hero-dark .lead { color: var(--muted-light); }
+.hero-dark .stat { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.03); }
+
+/* Modal dark style */
+.modal-content.dark-modal {
+    background: linear-gradient(180deg,var(--panel), rgba(21,25,28,0.88));
+    color: var(--text-light);
+    border-radius: 12px;
+    border: none;
+    overflow: hidden;
+}
+.modal-header.dark-modal {
+    background: linear-gradient(90deg, rgba(31,191,115,0.12), rgba(0,184,135,0.07));
+    color: var(--text-light);
+    backdrop-filter: blur(4px);
+}
+.modal-body.dark-modal {
+    background: transparent;
+}
+.form-control.dark-input {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.04);
+    color: var(--text-light);
+}
+.form-control.dark-input::placeholder { color: rgba(255,255,255,0.35); }
+
+/* Footer */
+.site-footer.dark { background: #071012; color: var(--muted-light); }
+
+/* Cards features */
+.icon-circle-dark { background: rgba(255,255,255,0.03); color: var(--accent); display:inline-flex; align-items:center; justify-content:center; width:56px; height:56px; border-radius:12px; }
+
+/* helper styles */
+.text-muted-dark { color: var(--muted-light); }
+
+@media (max-width: 767.98px) {
+    .hero-dark { padding: 2.5rem 0; }
+}
