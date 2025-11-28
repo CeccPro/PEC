@@ -17,7 +17,7 @@
             <!-- Placeholder para imagen -->
             <div class="image-placeholder">
                 <div class="text-success text-center">
-                    <img src="https://www.un.org/sites/un2.un.org/files/field/image/landscape-4350845_1920.jpg" alt="<?php echo $translations['alt_reforestation']; ?>" class="img-fluid rounded shadow">
+                    <img src="https://humanidades.com/wp-content/uploads/2018/08/bosque-1-e1577589211472-800x416.jpg" alt="<?php echo $translations['alt_reforestation']; ?>" class="img-fluid rounded shadow">
                 </div>
             </div>
         </div>

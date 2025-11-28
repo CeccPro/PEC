@@ -314,18 +314,6 @@
             <p class="lead mb-4"><?php echo $translations['cta_text']; ?></p>
             <div class="row g-3 justify-content-center">
                 <div class="col-auto">
-                    <button class="btn btn-light btn-lg">
-                        <i class="bi bi-tree me-2"></i>
-                        <?php echo $translations['cta_plant_now']; ?>
-                    </button>
-                </div>
-                <div class="col-auto">
-                    <button class="btn btn-outline-light btn-lg">
-                        <i class="bi bi-heart me-2"></i>
-                        <?php echo $translations['cta_donate']; ?>
-                    </button>
-                </div>
-                <div class="col-auto">
                     <a href="index.php?page=contact" class="btn btn-outline-light btn-lg">
                         <i class="bi bi-envelope me-2"></i>
                         <?php echo $translations['cta_contact']; ?>

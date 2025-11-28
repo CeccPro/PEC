@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <img src="https://www.itto.int/files/topics/5825_ext_03_es_0.jpg" alt="<?php echo $translations['alt_environmental_benefits']; ?>" class="img-fluid rounded shadow">
+                <img src="https://cdn0.bioenciclopedia.com/es/posts/1/8/0/bosque_81_600.jpg" alt="<?php echo $translations['alt_environmental_benefits']; ?>" class="img-fluid rounded shadow">
             </div>
         </div>
         
@@ -161,7 +161,7 @@
     <!-- Beneficios Económicos -->
     <section class="mb-5 ">
         <div class="row align-items-center">            <div class="col-lg-6">
-                <img src="https://media.istockphoto.com/id/519358895/vector/vector-money-tree-symbol-of-successful-business.jpg?s=612x612&w=0&k=20&c=TKVQdQk9vBoSk7rIxS2tpa9-45ulXeTxlUbA9k1h2os=" alt="<?php echo $translations['alt_economic_benefits']; ?>" class="img-fluid rounded shadow">
+                <img src="https://www.econlib.org/wp-content/uploads/2019/11/Screen-Shot-2019-11-20-at-10.01.36-PM.png" alt="<?php echo $translations['alt_economic_benefits']; ?>" class="img-fluid rounded shadow">
             </div>
             
             <div class="col-lg-6">

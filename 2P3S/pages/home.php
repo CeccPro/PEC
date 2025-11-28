@@ -30,7 +30,7 @@
                 <div class="card card-dark rounded shadow-sm">
                     <div class="card-body card-dark">
                         <div class="ratio ratio-16x9">
-                            <img src="https://placehold.co/1000x620/0b1412/FFFFFF?text=Reforestación+Oscura" class="img-fluid rounded" alt="<?php echo $translations['hero_image_alt'] ?? 'Bosque'; ?>">
+                            <img src="https://res.cloudinary.com/drt2tlz1j/images/f_auto,q_auto/v1675888910/fn1/global-government-tree-planting/global-government-tree-planting.jpg?_i=AA" class="img-fluid rounded" alt="<?php echo $translations['hero_image_alt'] ?? 'Bosque'; ?>">
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="rounded card-dark p-3 text-center">
-                        <img src="https://placehold.co/700x460/071012/FFFFFF?text=Operación+de+plantación+Oscura" class="img-fluid rounded" alt="<?php echo $translations['alt_reforestation']; ?>">
+                        <img src="https://img.freepik.com/foto-gratis/concepto-jardineria-manos-femeninas_23-2148127945.jpg?semt=ais_hybrid&w=740&q=80" class="img-fluid rounded" alt="<?php echo $translations['alt_reforestation']; ?>">
                     </div>
                 </div>
             </div>

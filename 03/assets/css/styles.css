@@ -1,0 +1,14 @@
+/* Estilos básicos personalizados para el proyecto de reforestación */
+body {
+    background-color: #f7fbf6;
+}
+
+header h1 {
+    color: #2a5934;
+}
+
+footer {
+    border-top: 1px solid #e6efe8;
+}
+
+/* TODO: Mejorar estilos, añadir tema oscuro y accesibilidad */
