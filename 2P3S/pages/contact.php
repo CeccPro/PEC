@@ -304,7 +304,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
     submitBtn.disabled = true;
 
     try {
-        const res = await fetch("https://ecoblog-contact-form-production.up.railway.app", {
+        const res = await fetch("https://ecoblog-contact-form-production.up.railway.app/:3000", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data)
