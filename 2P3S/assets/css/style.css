@@ -82,6 +82,8 @@ body {
     min-height: 60vh;
     display: flex;
     align-items: center;
+}
+
 .navbar-nav .nav-link:hover {
     color: var(--brand-light) !important;
     background-color: rgba(255, 255, 255, 0.1);
@@ -93,6 +95,8 @@ body {
     background-color: var(--brand);
     border-color: var(--brand);
     transition: all .25s ease;
+}
+
 /* Estilos para pestañas (tabs) en la página de proyecto */
 .nav-pills .nav-link {
     border-radius: 0.5rem;
@@ -100,6 +104,8 @@ body {
     border-color: var(--brand-dark);
     transform: translateY(-1px);
     box-shadow: 0 6px 20px rgba(6, 92, 50, 0.12);
+}
+
 .nav-pills .nav-link.active {
     background-color: rgba(16, 122, 74, 0.12);
     color: var(--brand-dark) !important;
@@ -119,11 +125,6 @@ body {
 }
 
 .nav-pills .nav-link small, .nav-pills .nav-link .small {
-.main-nav .nav-link:hover {
-    color: var(--brand-dark) !important;
-    background-color: rgba(16, 122, 74, 0.05);
-    border-radius: 0.25rem;
-}
     font-size: 0.85rem;
     color: #6c757d;
     display:block;
@@ -131,18 +132,20 @@ body {
 
 .navbar-nav .nav-item {
     margin: 0 0.2rem;
+}
+
 .nav-pills .nav-link.active {
     background-color: rgba(16, 122, 74, 0.08);
     color: var(--brand-dark) !important;
     border-left: 3px solid var(--brand);
 }
-}
 
 .navbar .btn-success {
-        padding: 0.5rem 1rem;
-        font-weight: 500;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
     transition: all 0.3s ease;
 }
+
 .modal-content {
     border: none;
     border-radius: 10px;
@@ -160,70 +163,12 @@ body {
     border-radius: 0.5rem;
 }
 
-    background-color: var(--brand) !important;
 @media (max-width: 991.98px) {
     .navbar-brand {
         font-size: 1.25rem;
     }
-    background-color: var(--brand) !important;
     .navbar-nav .nav-link {
         padding: 0.5rem 0;
-/* Header Layout */
-.site-header {
-    background: #fff;
-}
-.site-header .main-nav .nav-link {
-    color: var(--muted);
-    font-weight: 500;
-}
-.site-header .main-nav .nav-link.active {
-    color: var(--brand-dark) !important;
-}
-
-/* Footer */
-.site-footer {
-    background: linear-gradient(180deg, #0b5e36 0%, #093e28 100%);
-    color: #fff;
-}
-.site-content {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
-}
-.page-section {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-.page-section .h1, .page-section .display-5, .page-section h2, .page-section h3 {
-    color: var(--brand-dark);
-}
-.site-title { color: var(--brand-dark); }
-
-/* Brand accent for links */
-a { color: var(--brand-dark); }
-a:hover { color: var(--brand); }
-
-/* Ghost button for subtle action links in header */
-.btn-ghost {
-    background: transparent;
-    border: none;
-    color: var(--muted);
-    padding: 0.35rem 0.5rem;
-}
-.btn-ghost:hover {
-    color: var(--brand-dark);
-    text-decoration: none;
-}
-.site-footer a { color: #e7f6ec; }
-.site-footer .btn-outline-light { border-color: rgba(255,255,255,0.08); color: #fff; }
-
-/* Card and content styles */
-.card-feature { border-radius: 10px; }
-.icon-circle { width: 64px; height: 64px; border-radius: 50%; }
-
-/* Responsive: large screens */
-@media (min-width: 992px) {
-    .site-header .main-nav { margin-left: 1.5rem; }
-}
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
     
@@ -426,6 +371,21 @@ html {
 
 .interactive-element:hover {
     color: var(--success-green);
+}
+
+/* Fix: allow header dropdowns to overflow and appear above page content */
+.site-header {
+    overflow: visible !important;
+}
+
+/* Ensure dropdown menus appear above other elements (Bootstrap uses z-index; increase to be safe) */
+.dropdown-menu {
+    z-index: 2000 !important;
+}
+
+/* Mobile offcanvas should stay above content */
+.offcanvas {
+    z-index: 2100 !important;
 }
 
 /* TODO: Agregar más estilos específicos para otras páginas cuando se creen */

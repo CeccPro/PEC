@@ -257,7 +257,7 @@ code {
 }
 
 /* Prevenir scroll horizontal */
-.container-fluid, .container {
+.site-content .container-fluid, .site-content .container {
     overflow-x: hidden;
 }
 
