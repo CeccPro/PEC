@@ -1,6 +1,6 @@
 <main class="site-content">
 <!-- Hero Section del Proyecto -->
-<section class="hero-section bg-success text-white py-5 page-section">
+<section class="hero-section bg-success text-white py-5 ">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-8">
@@ -26,7 +26,7 @@
 </section>
 
 <!-- Introducción al Proyecto -->
-<section class="py-5 page-section">
+<section class="py-5 ">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
@@ -38,7 +38,7 @@
 </section>
 
 <!-- Materias y Aplicaciones -->
-<section class="py-5 bg-dark page-section">
+<section class="py-5 bg-dark ">
     <div class="container">
         <h2 class="display-6 fw-bold text-center mb-5"><?php echo $translations['project_integration_disciplines']; ?></h2>
         
@@ -69,7 +69,7 @@
                 <div class="tab-content" id="subjects-tabContent">
                     <?php $first = true; foreach ($projectInfo['subjects'] as $key => $subject): ?>
                         <div class="tab-pane fade <?php echo $first ? 'show active' : ''; ?>" id="tabpane-<?php echo $key; ?>" role="tabpanel" aria-labelledby="tab-<?php echo $key; ?>">
-                            <div class="card border-0 shadow-sm p-4">
+                            <div class="card card-dark border-0 shadow-sm p-4">
                                 <div class="d-flex align-items-center mb-3">
                                     <div class="rounded-circle d-flex align-items-center justify-content-center bg-success text-white me-3" style="width:90px;height:60px;">
                                         <i class="bi <?php echo $icons[$key]; ?> fs-1"></i>
@@ -116,7 +116,7 @@
 </section>
 
 <!-- Objetivos del Proyecto -->
-<section class="py-5 page-section">
+<section class="py-5 ">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 mx-auto">
@@ -154,7 +154,7 @@
                     <div class="col-md-6">
                         <div class="d-flex">
                             <div class="flex-shrink-0">
-                                <div class="bg-warning rounded-circle p-3">
+                                <div class="bg-success rounded-circle p-3">
                                     <i class="bi bi-graph-up text-white"></i>
                                 </div>
                             </div>
@@ -185,7 +185,7 @@
 </section>
 
 <!-- Proceso de Desarrollo -->
-<section class="py-5 bg-dark page-section">
+<section class="py-5 bg-dark ">
     <div class="container">
         <h2 class="display-6 fw-bold text-center mb-5"><?php echo $translations['project_development_process']; ?></h2>
         
@@ -196,7 +196,7 @@
                         <div class="timeline-marker bg-success rounded-circle p-3 me-4">
                             <span class="text-white fw-bold">1</span>
                         </div>
-                        <div class="timeline-content bg-dark-light">
+                        <div class="timeline-content card-dark-light">
                             <h5><?php echo $translations['timeline_step_1']; ?></h5>
                             <p><?php echo $translations['timeline_step_1_desc']; ?></p>
                         </div>
@@ -206,17 +206,17 @@
                         <div class="timeline-marker bg-success rounded-circle p-3 me-4">
                             <span class="text-white fw-bold">2</span>
                         </div>
-                        <div class="timeline-content bg-dark-light">
+                        <div class="timeline-content card-dark-light">
                             <h5><?php echo $translations['timeline_step_2']; ?></h5>
                             <p><?php echo $translations['timeline_step_2_desc']; ?></p>
                         </div>
                     </div>
                     
                     <div class="timeline-item d-flex align-items-center mb-4">
-                        <div class="timeline-marker bg-warning rounded-circle p-3 me-4">
+                        <div class="timeline-marker bg-success rounded-circle p-3 me-4">
                             <span class="text-white fw-bold">3</span>
                         </div>
-                        <div class="timeline-content bg-dark-light">
+                        <div class="timeline-content card-dark-light">
                             <h5><?php echo $translations['timeline_step_3']; ?></h5>
                             <p><?php echo $translations['timeline_step_3_desc']; ?></p>
                         </div>
@@ -226,7 +226,7 @@
                         <div class="timeline-marker bg-success rounded-circle p-3 me-4">
                             <span class="text-white fw-bold">4</span>
                         </div>
-                        <div class="timeline-content bg-dark-light">
+                        <div class="timeline-content card-dark-light">
                             <h5><?php echo $translations['timeline_step_4']; ?></h5>
                             <p><?php echo $translations['timeline_step_4_desc']; ?></p>
                         </div>
@@ -238,7 +238,7 @@
 </section>
 
 <!-- Herramientas del Proyecto -->
-<section class="py-5 page-section">
+<section class="py-5 ">
     <div class="container">
         <h2 class="display-6 fw-bold text-center mb-5"><?php echo $translations['project_tools_developed']; ?></h2>
         

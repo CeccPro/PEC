@@ -26,8 +26,12 @@
     
     "water_protection": "Water Protection",
     "water_desc": "Trees help regulate the water cycle and prevent soil erosion.",
-    
+
+    "env_intro": "Forests are the lungs of our planet, providing essential ecosystem services to maintain global environmental balance.",
+    "economic_benefit_jobs_desc": "Job creation in nurseries, planting, maintenance, and forest monitoring",
     "economic_benefits": "Economic Benefits",
+    "econ_intro": "Reforestation not only benefits the environment but also creates sustainable economic opportunities for local communities.",
+    "economic_benefit_products_desc": "Sustainable timber, non-timber products, and renewable resources",
     "economic_desc": "Reforestation generates jobs and sustainable resources for communities.",
     
     "benefits_title": "Benefits of Reforestation",
@@ -414,6 +418,7 @@
     "economic_benefit_jobs": "Job Creation",
     "economic_benefit_products": "Forest Products",
     "economic_benefit_ecotourism": "Ecotourism",
+    "economic_benefit_ecotourism_desc": "Reforested areas attract tourists interested in nature, generating income for local communities.",
     "global_impact_title": "Global Impact of Reforestation",
     "global_impact_lead": "Figures that demonstrate the transformative power of forests",
     "global_restore_area": "Hectares to restore globally",

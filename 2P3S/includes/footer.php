@@ -1,4 +1,4 @@
-<footer class="site-footer bg-dark text-light pb-4">
+<footer class="site-footer bg-dark text-light p-4">
     <div class="container">
         <div class="row gy-4">
             <div class="col-md-6 col-lg-4">
@@ -29,7 +29,7 @@
             <div class="col-md-6 col-lg-3">
                 <h6 class="text-success"><?php echo $translations['contact_title']; ?></h6>
                 <p class="small text-light mb-1"><i class="bi bi-envelope me-2"></i> carlos.cs240021@cbta35.edu.mx</p>
-                <p class="small text-light mb-1"><i class="bi bi-telephone me-2"></i> [Placeholder]</p>
+                <p class="small text-light mb-1"><i class="bi bi-telephone me-2"></i> +52 55 4950 3492</p>
                 <p class="small text-light mb-0"><i class="bi bi-geo-alt me-2"></i> Carretera federal México - Puebla Km. 22.5, Col. San Juan Tlalpizáhuac</p>
             </div>
         </div>

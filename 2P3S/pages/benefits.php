@@ -1,4 +1,4 @@
-<main class="site-content container py-7">
+<main class="site-content container py-7 mt-4">
     <!-- Header de la página -->
     <div class="row">
         <div class="col-lg-8 mx-auto text-center mb-5">
@@ -12,7 +12,7 @@
     </div>
     
     <!-- Beneficios Ambientales -->
-    <section class="mb-5 page-section">
+    <section class="mb-5 ">
         <div class="row align-items-center mb-5">
             <div class="col-lg-6">
                 <h2 class="text-success mb-4">
@@ -24,9 +24,9 @@
                 </p>
                 
                 <div class="accordion" id="environmentalAccordion">
-                    <div class="accordion-item">
+                    <div class="accordion-item bg-dark-light text-light">
                         <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                            <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
                                 <?php echo $translations['env_capture_title']; ?>
                             </button>
                         </h2>
@@ -37,9 +37,9 @@
                         </div>
                     </div>
                     
-                    <div class="accordion-item">
+                    <div class="accordion-item bg-dark-light text-light">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                            <button class="accordion-button bg-dark text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
                                 <?php echo $translations['env_water_regulation_title']; ?>
                             </button>
                         </h2>
@@ -50,9 +50,9 @@
                         </div>
                     </div>
                     
-                    <div class="accordion-item">
+                    <div class="accordion-item bg-dark-light text-light">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                            <button class="accordion-button bg-dark text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
                                 <?php echo $translations['env_biodiversity_title']; ?>
                             </button>
                         </h2>
@@ -111,7 +111,7 @@
     </section>
     
     <!-- Beneficios Sociales -->
-    <section class="py-5 bg-dark rounded mb-5 page-section">
+    <section class="py-5 bg-dark rounded mb-5 ">
         <div class="container">
                 <h2 class="text-center text-success mb-5">
                 <i class="bi bi-people me-3"></i>
@@ -159,7 +159,7 @@
     </section>
     
     <!-- Beneficios Económicos -->
-    <section class="mb-5 page-section">
+    <section class="mb-5 ">
         <div class="row align-items-center">            <div class="col-lg-6">
                 <img src="https://media.istockphoto.com/id/519358895/vector/vector-money-tree-symbol-of-successful-business.jpg?s=612x612&w=0&k=20&c=TKVQdQk9vBoSk7rIxS2tpa9-45ulXeTxlUbA9k1h2os=" alt="<?php echo $translations['alt_economic_benefits']; ?>" class="img-fluid rounded shadow">
             </div>
@@ -221,7 +221,7 @@
     </section>
     
     <!-- Impacto Global -->
-    <section class="py-5 bg-dark text-white rounded page-section">
+    <section class="py-5 bg-dark text-white rounded mb-5 ">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="text-success mb-3"><?php echo $translations['global_impact_title']; ?></h2>

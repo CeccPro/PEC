@@ -36,6 +36,10 @@ body {
 }
 
 .bg-dark-light {
+    background-color: #495057;
+}
+
+.card-dark-light {
     background-color: #343a40;
     border: 1px solid #495057;
     padding: 1rem;
@@ -344,7 +348,7 @@ footer a:hover {
 }
 
 /* Formularios */
-.form-control:focus {
+.form-control text-light:focus {
     border-color: var(--brand);
     box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
 }

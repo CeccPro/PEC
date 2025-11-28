@@ -1,5 +1,5 @@
 <!-- Dark Themed Home Page -->
-<main class="site-content hero-dark page-section">
+<main class="site-content hero-dark ">
     <div class="container">
         <div class="row gx-5 align-items-center">
             <div class="col-lg-6 d-flex flex-column gap-3">

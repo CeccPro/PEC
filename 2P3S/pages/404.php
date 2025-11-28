@@ -1,7 +1,7 @@
 <main class="site-content container py-7">
     <div class="row justify-content-center">
         <div class="col-lg-6 text-center">
-            <div class="mb-5 page-section">
+            <div class="mb-5 ">
                 <!-- Ilustración 404 -->
                 <div class="display-1 text-success mb-4" style="font-size: 8rem; font-weight: bold;">
                     4<i class="bi bi-tree-fill mx-3"></i>4
@@ -13,7 +13,7 @@
             </div>
             
             <!-- Sugerencias -->
-            <div class="card border-success shadow-sm mb-4 page-section">
+            <div class="card border-success shadow-sm mb-4 ">
                 <div class="card-body card-dark">
                     <h5 class="text-success mb-3"><?php echo $translations['404_what_to_do']; ?></h5>
                     <div class="d-grid gap-2">
@@ -44,11 +44,11 @@
             </div>
             
             <!-- Búsqueda simple -->
-            <div class="card border-0 bg-dark page-section">
+            <div class="card border-0 bg-dark ">
                 <div class="card-body card-dark">
                     <h6 class="text-success mb-3"><?php echo $translations['404_search_prompt']; ?></h6>
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="<?php echo $translations['404_search_placeholder']; ?>" id="searchInput">
+                        <input type="text" class="form-control text-light bg-dark" placeholder="<?php echo $translations['404_search_placeholder']; ?>" id="searchInput">
                         <button class="btn btn-success" type="button" id="searchBtn">
                             <i class="bi bi-search"></i>
                         </button>

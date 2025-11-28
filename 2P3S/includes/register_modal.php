@@ -21,22 +21,22 @@
                             <form id="registerForm" action="register_process.php" method="POST">
                             <div class="mb-3">
                                 <label for="register_username" class="form-label"><?php echo $translations['username'] ?? 'Usuario'; ?></label>
-                                <input type="text" class="form-control dark-input" id="register_username" name="username" required>
+                                <input type="text" class="form-control text-light bg-dark dark-input" id="register_username" name="username" required>
                             </div>
 
                             <div class="mb-3">
                                 <label for="register_email" class="form-label"><?php echo $translations['email'] ?? 'Email'; ?></label>
-                                <input type="email" class="form-control dark-input" id="register_email" name="email" required>
+                                <input type="email" class="form-control text-light bg-dark dark-input" id="register_email" name="email" required>
                             </div>
                     
                             <div class="mb-3">
                                 <label for="register_password" class="form-label"><?php echo $translations['password'] ?? 'Contraseña'; ?></label>
-                                <input type="password" class="form-control dark-input" id="register_password" name="password" required>
+                                <input type="password" class="form-control text-light bg-dark dark-input" id="register_password" name="password" required>
                             </div>
                     
                             <div class="mb-3">
                                 <label for="register_confirm_password" class="form-label"><?php echo $translations['confirm_password'] ?? 'Confirmar Contraseña'; ?></label>
-                                <input type="password" class="form-control dark-input" id="register_confirm_password" name="confirm_password" required>
+                                <input type="password" class="form-control text-light bg-dark dark-input" id="register_confirm_password" name="confirm_password" required>
                             </div>
                     
                             <div class="alert alert-danger d-none" id="registerError"></div>

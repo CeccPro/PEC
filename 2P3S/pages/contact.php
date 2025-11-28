@@ -1,6 +1,6 @@
 <main class="site-content container py-7">
     <!-- Header -->
-    <div class="row page-section">
+    <div class="row mt-4">
         <div class="col-lg-8 mx-auto text-center mb-5">
             <h2 class="display-4 fw-bold text-success mb-4">
                 <?php echo $translations['contact_title']; ?>
@@ -11,7 +11,7 @@
         </div>
     </div>
     
-    <div class="row page-section">
+    <div class="row ">
         <!-- Formulario de contacto -->
         <div class="col-lg-8 mb-5">
             <div class="card shadow-sm border-0">
@@ -26,19 +26,19 @@
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label for="name" class="form-label"><?php echo $translations['contact_name_label']; ?></label>
-                                <input type="text" class="form-control" id="name" name="name" required>
+                                <input type="text" class="form-control text-light bg-dark" id="name" name="name" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="email" class="form-label"><?php echo $translations['contact_email_label']; ?></label>
-                                <input type="email" class="form-control" id="email" name="email" required>
+                                <input type="email" class="form-control text-light bg-dark" id="email" name="email" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="phone" class="form-label"><?php echo $translations['contact_phone_label']; ?></label>
-                                <input type="tel" class="form-control" id="phone" name="phone">
+                                <input type="tel" class="form-control text-light bg-dark" id="phone" name="phone">
                             </div>
                             <div class="col-md-6">
                                 <label for="subject" class="form-label"><?php echo $translations['contact_subject_label']; ?></label>
-                                <select class="form-select" id="subject" name="subject" required>
+                                <select class="form-select text-light bg-dark" id="subject" name="subject" required>
                                     <option value=""><?php echo $translations['contact_subject_placeholder']; ?></option>
                                     <option value="general"><?php echo $translations['contact_subject_general']; ?></option>
                                     <option value="volunteer"><?php echo $translations['contact_subject_volunteer']; ?></option>
@@ -50,7 +50,7 @@
                             </div>
                             <div class="col-12">
                                 <label for="message" class="form-label"><?php echo $translations['contact_message_label']; ?></label>
-                                <textarea class="form-control" id="message" name="message" rows="5" 
+                                <textarea class="form-control text-light bg-dark" id="message" name="message" rows="5" 
                                          placeholder="<?php echo $translations['contact_message_placeholder']; ?>" required></textarea>
                             </div>
                             <div class="col-12">
@@ -120,7 +120,7 @@
                             </div>
                             <h5 class="text-success"><?php echo $translations['contact_phone_title']; ?></h5>
                             <p class="text-light mb-0">
-                                [Placeholder]<br>
+                                +52 55 4950 3492<br>
                                 <small>Lun-Vie: 7:00 AM - 3:00 PM</small>
                             </p>
                         </div>
@@ -171,7 +171,7 @@
         </div>
     </div>
     
-    <section class="py-5 page-section">
+    <section class="py-5 ">
         <div class="row">
             <div class="col-12">
                 <h3 class="text-center text-success mb-4"><?php echo $translations['contact_find_us_title']; ?></h3>
@@ -183,16 +183,16 @@
     </section>
     
     <!-- FAQ -->
-    <section class="py-5 bg-dark rounded page-section">
+    <section class="py-5 rounded ">
         <div class="container">
             <h3 class="text-center text-success mb-5"><?php echo $translations['contact_faq_title']; ?></h3>
             
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <div class="accordion" id="faqAccordion">
-                        <div class="accordion-item">
+                        <div class="accordion-item bg-dark-light text-light">
                             <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
                                     <?php echo $translations['faq_q1']; ?>
                                 </button>
                             </h2>
@@ -203,9 +203,9 @@
                             </div>
                         </div>
                         
-                        <div class="accordion-item">
+                        <div class="accordion-item bg-dark-light text-light">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
                                     <?php echo $translations['faq_q2']; ?>
                                 </button>
                             </h2>
@@ -216,9 +216,9 @@
                             </div>
                         </div>
                         
-                        <div class="accordion-item">
+                        <div class="accordion-item bg-dark-light text-light">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
                                     <?php echo $translations['faq_q3']; ?>
                                 </button>
                             </h2>
@@ -229,9 +229,9 @@
                             </div>
                         </div>
                         
-                        <div class="accordion-item">
+                        <div class="accordion-item bg-dark-light text-light">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
                                     <?php echo $translations['faq_q4']; ?>
                                 </button>
                             </h2>
@@ -249,7 +249,7 @@
     </main>
 
 <!-- Información Adicional -->
-<section class="py-5 bg-dark">
+<section class="py-5 mb-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
@@ -272,7 +272,7 @@
                         </span>
                     </div>
                     <div class="col-auto">
-                        <span class="badge bg-warning fs-6 px-3 py-2">
+                        <span class="badge bg-success fs-6 px-3 py-2">
                             <i class="bi bi-tree me-1"></i>
                             <?php echo $translations['contact_env_badge']; ?>
                         </span>

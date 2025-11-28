@@ -27,6 +27,7 @@
     "water_protection": "Protección del Agua",
     "water_desc": "Los árboles ayudan a regular el ciclo del agua y previenen la erosión del suelo.",
     
+    "economic_desc": "La reforestación genera empleos y recursos sostenibles para las comunidades.",
     "economic_benefits": "Beneficios Económicos",
         "benefits_lead": "Descubre cómo la reforestación impacta positivamente en el medio ambiente, la sociedad y la economía",
         "env_intro": "Los bosques son los pulmones de nuestro planeta, proporcionando servicios ecosistémicos fundamentales para mantener el equilibrio ambiental global.",
@@ -47,7 +48,7 @@
     
     "reduce_consume": "Reduce tu Consumo",
     "reduce_desc": "Usa menos papel y productos que contribuyan a la deforestación.",
-        "economic_benefit_ecotourism_desc": "Desarrollo del turismo sostenible y actividades recreativas",
+        "": "Desarrollo del turismo sostenible y actividades recreativas",
     
     "educate": "Educa a Otros",
     "educate_desc": "Comparte información sobre la importancia de los bosques.",
@@ -412,13 +413,13 @@
     "economic_benefit_jobs": "Generación de Empleo",
     "economic_benefit_products": "Productos Forestales",
     "economic_benefit_ecotourism": "Ecoturismo",
+    "economic_benefit_ecotourism_desc": "Las áreas reforestadas atraen turistas interesados en la naturaleza, generando ingresos para las comunidades locales.",
     "global_impact_title": "Impacto Global de la Reforestación",
     "global_impact_lead": "Cifras que demuestran el poder transformador de los bosques",
     "global_restore_area": "Hectáreas a restaurar globalmente",
     "global_people_depend": "Personas dependen de los bosques",
     "global_economic_value": "Valor económico anual de los bosques",
-    "global_co2_captured": "CO2 capturado potencialmente"
-    ,
+    "global_co2_captured": "CO2 capturado potencialmente",
     "404_title": "Página No Encontrada",
     "404_message": "Lo sentimos, la página que buscas parece haberse perdido en el bosque.",
     "404_what_to_do": "¿Qué puedes hacer?",

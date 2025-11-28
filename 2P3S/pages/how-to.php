@@ -1,4 +1,4 @@
-<main class="site-content container py-7">
+<main class="site-content container py-7 mt-4">
     <!-- Header -->
     <div class="row">
         <div class="col-lg-8 mx-auto text-center mb-5">
@@ -12,7 +12,7 @@
     </div>
     
     <!-- Formas de Ayudar -->
-    <div class="row g-4 mb-5 page-section">
+    <div class="row g-4 mb-5 ">
         <div class="col-lg-6">
             <div class="card h-100 border-success shadow-sm">
                 <div class="card-header bg-success text-white">
@@ -201,7 +201,7 @@
     </div>
     
     <!-- Guía paso a paso -->
-    <section class="py-5 bg-dark rounded mb-5 page-section">
+    <section class="py-5 bg-dark rounded mb-5 ">
         <div class="container">
             <h2 class="text-center text-success mb-5"><?php echo $translations['how_guide_title']; ?></h2>
             
@@ -210,7 +210,7 @@
                     <div class="timeline">
                         <div class="timeline-item">
                             <div class="timeline-marker bg-success">1</div>
-                            <div class="timeline-content bg-dark-light">
+                            <div class="timeline-content card-dark-light">
                                 <h5 class="text-success"><?php echo $translations['how_timeline_research']; ?></h5>
                                 <p><?php echo $translations['how_timeline_research_desc']; ?></p>
                                 <small class="text-light"><?php echo $translations['how_timeline_estimated_1']; ?></small>
@@ -219,7 +219,7 @@
                         
                         <div class="timeline-item">
                             <div class="timeline-marker bg-success">2</div>
-                            <div class="timeline-content bg-dark-light">
+                            <div class="timeline-content card-dark-light">
                                 <h5 class="text-success"><?php echo $translations['how_timeline_planning']; ?></h5>
                                 <p><?php echo $translations['how_timeline_planning_desc']; ?></p>
                                 <small class="text-light"><?php echo $translations['how_timeline_estimated_2']; ?></small>
@@ -227,15 +227,15 @@
                         </div>
                         
                         <div class="timeline-item">
-                            <div class="timeline-content bg-dark-light">
+                            <div class="timeline-content card-dark-light">
                                 <h5 class="text-success"><?php echo $translations['how_timeline_execution']; ?></h5>
                                 <p><?php echo $translations['how_timeline_execution_desc']; ?></p>
                                 <small class="text-light"><?php echo $translations['how_timeline_estimated_3']; ?></small>
                             </div>
                         </div>
-                        
+
                         <div class="timeline-item">
-                            <div class="timeline-content bg-dark-light">
+                            <div class="timeline-content card-dark-light">
                                 <h5 class="text-success"><?php echo $translations['how_timeline_followup']; ?></h5>
                                 <p><?php echo $translations['how_timeline_followup_desc']; ?></p>
                                 <small class="text-light"><?php echo $translations['how_timeline_estimated_4']; ?></small>
@@ -248,7 +248,7 @@
     </section>
     
     <!-- Recursos y herramientas -->
-    <section class="mb-5 page-section">
+    <section class="mb-5 ">
         <h2 class="text-center text-success mb-5"><?php echo $translations['resources_tools_title']; ?></h2>
         
         <div class="row g-4">
@@ -308,7 +308,7 @@
     </section>
     
     <!-- Call to action final -->
-    <section class="py-5 bg-success text-white rounded text-center page-section">
+    <section class="py-5 bg-success text-white rounded text-center mb-5 ">  
         <div class="container">
             <h2 class="mb-3"><?php echo $translations['cta_title']; ?></h2>
             <p class="lead mb-4"><?php echo $translations['cta_text']; ?></p>
@@ -372,12 +372,5 @@
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
-}
-
-.timeline-content bg-dark-light {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 </style>

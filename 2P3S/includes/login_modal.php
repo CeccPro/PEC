@@ -21,12 +21,12 @@
                             <form id="loginForm" action="login_process.php" method="POST">
                             <div class="mb-3">
                                 <label for="username" class="form-label"><?php echo $translations['username']; ?></label>
-                                <input type="text" class="form-control dark-input" id="username" name="username" required>
+                                <input type="text" class="form-control text-light bg-dark dark-input" id="username" name="username" required>
                             </div>
                     
                             <div class="mb-3">
                                 <label for="password" class="form-label"><?php echo $translations['password']; ?></label>
-                                <input type="password" class="form-control dark-input" id="password" name="password" required>
+                                <input type="password" class="form-control text-light bg-dark dark-input" id="password" name="password" required>
                             </div>
                     
                             <div class="d-flex justify-content-between align-items-center mb-3">
