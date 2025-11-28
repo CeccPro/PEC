@@ -22,7 +22,7 @@
                     </h4>
                 </div>
                 <div class="card-body card-dark p-4">
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://ecoblog-contact-form-production.up.railway.app" method="POST">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label for="name" class="form-label"><?php echo $translations['contact_name_label']; ?></label>
@@ -50,8 +50,7 @@
                             </div>
                             <div class="col-12">
                                 <label for="message" class="form-label"><?php echo $translations['contact_message_label']; ?></label>
-                                <textarea class="form-control text-light bg-dark" id="message" name="message" rows="5" 
-                                         placeholder="<?php echo $translations['contact_message_placeholder']; ?>" required></textarea>
+                                <textarea class="form-control text-light bg-dark" id="message" name="message" rows="5" placeholder="<?php echo $translations['contact_message_placeholder']; ?>" required></textarea>
                             </div>
                             <div class="col-12">
                                 <div class="form-check">
@@ -284,37 +283,43 @@
 </section>
 
 <script>
-// Manejo del formulario de contacto
-document.getElementById('contactForm').addEventListener('submit', function(e) {
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
     e.preventDefault();
-    
-    const formData = new FormData(this);
-    const submitBtn = this.querySelector('button[type="submit"]');
+
+    const form = this;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    const submitBtn = form.querySelector('button[type="submit"]');
     const originalText = submitBtn.innerHTML;
     const successAlert = document.getElementById('contactSuccess');
     const errorAlert = document.getElementById('contactError');
-    
-    // Limpiar alertas previas
+
     successAlert.classList.add('d-none');
     errorAlert.classList.add('d-none');
-    
-    // Mostrar loading
-    submitBtn.innerHTML = `<span class="spinner-border spinner-border-sm me-2"></span>${window.translations?.contact_sending || 'Sending...'}`;
+
+    submitBtn.innerHTML = `
+        <span class="spinner-border spinner-border-sm me-2"></span>Enviando...
+    `;
     submitBtn.disabled = true;
-    
-    // TODO: Implementar envío real del formulario
-    // Simulación de envío
-    setTimeout(() => {
-        // Simulamos éxito (en producción, esto sería una llamada AJAX real)
+
+    try {
+        const res = await fetch("https://ecoblog-contact-form-production.up.railway.app", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data)
+        });
+
+        if (!res.ok) throw new Error("Server no coopera");
+
         successAlert.classList.remove('d-none');
-        this.reset();
-        
-        // Restaurar botón
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
-        
-        // Scroll al mensaje de éxito
-        successAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }, 2000);
+        form.reset();
+    } catch (err) {
+        console.error(err);
+        errorAlert.classList.remove('d-none');
+    }
+
+    submitBtn.innerHTML = originalText;
+    submitBtn.disabled = false;
 });
 </script>

@@ -2,8 +2,7 @@
     <div class="container-fluid px-4">
         <div class="d-flex align-items-center justify-content-between py-2">
             <a class="navbar-brand d-flex align-items-center gap-2 mb-0 text-decoration-none" href="index.php">
-                <i class="bi bi-tree-fill fs-4 text-success"></i>
-                <span class="h5 mb-0 fw-bold <?php echo 'text-light'; ?>"><?php echo $translations['site_name']; ?></span>
+                <span class="h5 mb-0 fw-bold <?php echo 'text-success'; ?>"><?php echo $translations['site_name']; ?></span>
             </a>
 
             <nav class="main-nav d-none d-lg-block">
