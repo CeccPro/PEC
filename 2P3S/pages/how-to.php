@@ -5,7 +5,7 @@
             <h2 class="display-4 fw-bold text-success mb-4">
                 <?php echo $translations['how_help_title']; ?>
             </h2>
-            <p class="lead text-muted">
+            <p class="lead text-light">
                 <?php echo $translations['how_lead']; ?>
             </p>
         </div>
@@ -21,7 +21,7 @@
                         <?php echo $translations['plant_trees']; ?>
                     </h4>
                 </div>
-                <div class="card-body">
+                <div class="card-body card-dark">
                     <p class="mb-3"><?php echo $translations['plant_trees_desc']; ?></p>
                     
                     <h6 class="text-success"><?php echo $translations['how_start_label']; ?></h6>
@@ -60,34 +60,34 @@
                         <?php echo $translations['donate']; ?>
                     </h4>
                 </div>
-                <div class="card-body">
+                <div class="card-body card-dark">
                     <p class="mb-3"><?php echo $translations['donate_desc']; ?></p>
                     
                     <h6 class="text-success"><?php echo $translations['how_recommended_orgs']; ?></h6>
                     <div class="row g-2 mb-3">
                         <div class="col-6">
-                            <div class="p-2 bg-light rounded text-center">
+                            <div class="p-2 bg-dark rounded text-center">
                                 <small class="fw-bold">One Tree Planted</small>
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="p-2 bg-light rounded text-center">
+                            <div class="p-2 bg-dark rounded text-center">
                                 <small class="fw-bold">Trees for the Future</small>
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="p-2 bg-light rounded text-center">
+                            <div class="p-2 bg-dark rounded text-center">
                                 <small class="fw-bold">Eden Projects</small>
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="p-2 bg-light rounded text-center">
+                            <div class="p-2 bg-dark rounded text-center">
                                 <small class="fw-bold">Plant-for-the-Planet</small>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="alert alert-success">
+                    <div class="card card-dark p-2 bg-dark rounded">
                         <small>
                             <i class="bi bi-info-circle me-1"></i>
                             <?php echo $translations['donate_info']; ?>
@@ -110,35 +110,35 @@
                         <?php echo $translations['reduce_consume']; ?>
                     </h4>
                 </div>
-                <div class="card-body">
+                <div class="card-body card-dark">
                     <p class="mb-3"><?php echo $translations['reduce_desc']; ?></p>
                     
                     <h6 class="text-success"><?php echo $translations['how_practical_actions']; ?></h6>
                     <div class="row g-2">
                         <div class="col-12">
-                            <div class="d-flex align-items-start p-2 bg-light rounded">
+                            <div class="d-flex align-items-start p-2 bg-dark rounded">
                                 <i class="bi bi-newspaper text-success me-2 mt-1"></i>
                                 <div>
                                     <small class="fw-bold"><?php echo $translations['how_reduce_paper']; ?></small>
-                                    <br><small class="text-muted"><?php echo $translations['how_reduce_paper_desc']; ?></small>
+                                    <br><small class="text-light"><?php echo $translations['how_reduce_paper_desc']; ?></small>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="d-flex align-items-start p-2 bg-light rounded">
+                            <div class="d-flex align-items-start p-2 bg-dark rounded">
                                 <i class="bi bi-cart text-success me-2 mt-1"></i>
                                 <div>
                                     <small class="fw-bold"><?php echo $translations['how_buy_sustainably']; ?></small>
-                                    <br><small class="text-muted"><?php echo $translations['how_buy_sustainably_desc']; ?></small>
+                                    <br><small class="text-light"><?php echo $translations['how_buy_sustainably_desc']; ?></small>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="d-flex align-items-start p-2 bg-light rounded">
+                            <div class="d-flex align-items-start p-2 bg-dark rounded">
                                 <i class="bi bi-house text-success me-2 mt-1"></i>
                                 <div>
                                     <small class="fw-bold"><?php echo $translations['how_green_construction']; ?></small>
-                                    <br><small class="text-muted"><?php echo $translations['how_green_construction_desc']; ?></small>
+                                    <br><small class="text-light"><?php echo $translations['how_green_construction_desc']; ?></small>
                                 </div>
                             </div>
                         </div>
@@ -160,7 +160,7 @@
                         <?php echo $translations['educate']; ?>
                     </h4>
                 </div>
-                <div class="card-body">
+                <div class="card-body card-dark">
                     <p class="mb-3"><?php echo $translations['educate_desc']; ?></p>
                     
                     <h6 class="text-success"><?php echo $translations['how_educate_methods']; ?></h6>
@@ -184,8 +184,8 @@
                     </ul>
                     
                     <!-- TODO: Agregar herramientas de compartir en redes sociales -->
-                    <div class="mt-3 p-2 bg-light rounded">
-                        <small class="text-muted">
+                    <div class="mt-3 p-2 bg-dark rounded">
+                        <small class="text-light">
                             <i class="bi bi-info-circle me-1"></i>
                             <?php echo $translations['how_coming_soon_toolkit']; ?>
                         </small>
@@ -201,7 +201,7 @@
     </div>
     
     <!-- Guía paso a paso -->
-    <section class="py-5 bg-light rounded mb-5 page-section">
+    <section class="py-5 bg-dark rounded mb-5 page-section">
         <div class="container">
             <h2 class="text-center text-success mb-5"><?php echo $translations['how_guide_title']; ?></h2>
             
@@ -210,35 +210,35 @@
                     <div class="timeline">
                         <div class="timeline-item">
                             <div class="timeline-marker bg-success">1</div>
-                            <div class="timeline-content">
+                            <div class="timeline-content bg-dark-light">
                                 <h5 class="text-success"><?php echo $translations['how_timeline_research']; ?></h5>
                                 <p><?php echo $translations['how_timeline_research_desc']; ?></p>
-                                <small class="text-muted"><?php echo $translations['how_timeline_estimated_1']; ?></small>
+                                <small class="text-light"><?php echo $translations['how_timeline_estimated_1']; ?></small>
                             </div>
                         </div>
                         
                         <div class="timeline-item">
                             <div class="timeline-marker bg-success">2</div>
-                            <div class="timeline-content">
+                            <div class="timeline-content bg-dark-light">
                                 <h5 class="text-success"><?php echo $translations['how_timeline_planning']; ?></h5>
                                 <p><?php echo $translations['how_timeline_planning_desc']; ?></p>
-                                <small class="text-muted"><?php echo $translations['how_timeline_estimated_2']; ?></small>
+                                <small class="text-light"><?php echo $translations['how_timeline_estimated_2']; ?></small>
                             </div>
                         </div>
                         
                         <div class="timeline-item">
-                            <div class="timeline-content">
+                            <div class="timeline-content bg-dark-light">
                                 <h5 class="text-success"><?php echo $translations['how_timeline_execution']; ?></h5>
                                 <p><?php echo $translations['how_timeline_execution_desc']; ?></p>
-                                <small class="text-muted"><?php echo $translations['how_timeline_estimated_3']; ?></small>
+                                <small class="text-light"><?php echo $translations['how_timeline_estimated_3']; ?></small>
                             </div>
                         </div>
                         
                         <div class="timeline-item">
-                            <div class="timeline-content">
+                            <div class="timeline-content bg-dark-light">
                                 <h5 class="text-success"><?php echo $translations['how_timeline_followup']; ?></h5>
                                 <p><?php echo $translations['how_timeline_followup_desc']; ?></p>
-                                <small class="text-muted"><?php echo $translations['how_timeline_estimated_4']; ?></small>
+                                <small class="text-light"><?php echo $translations['how_timeline_estimated_4']; ?></small>
                             </div>
                         </div>
                     </div>
@@ -254,7 +254,7 @@
         <div class="row g-4">
             <div class="col-lg-4">
                 <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center">
+                    <div class="card-body card-dark text-center">
                         <i class="bi bi-phone text-success" style="font-size: 3rem;"></i>
                         <h5 class="text-success mt-3"><?php echo $translations['apps_title']; ?></h5>
                         <ul class="list-unstyled text-start">
@@ -269,7 +269,7 @@
             
             <div class="col-lg-4">
                 <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center">
+                    <div class="card-body card-dark text-center">
                         <i class="bi bi-book text-success" style="font-size: 3rem;"></i>
                         <h5 class="text-success mt-3"><?php echo $translations['pdf_guides_title']; ?></h5>
                         <ul class="list-unstyled text-start">
@@ -288,7 +288,7 @@
             
             <div class="col-lg-4">
                 <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center">
+                    <div class="card-body card-dark text-center">
                         <i class="bi bi-people text-success" style="font-size: 3rem;"></i>
                         <h5 class="text-success mt-3"><?php echo $translations['community_title']; ?></h5>
                         <ul class="list-unstyled text-start">
@@ -374,7 +374,7 @@
     font-size: 1.2rem;
 }
 
-.timeline-content {
+.timeline-content bg-dark-light {
     background: white;
     padding: 1.5rem;
     border-radius: 8px;

@@ -1,6 +1,6 @@
 :root {
-    --brand: #107a4a; /* principal */
-    --brand-dark: #0b5e36;
+    --brand: #2fb377; /* principal */
+    --brand-dark: #04301a;
     --brand-light: #9dffba;
     --muted: #6c757d;
     --bg: #f7faf7;
@@ -18,7 +18,7 @@ body {
 
 /* Hero section personalizada */
 .hero-section {
-    background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
+    background: linear-gradient(-135deg, var(--brand) 0%, var(--brand-dark) 100%);
     min-height: 70vh;
     display: flex;
     align-items: center;
@@ -33,6 +33,14 @@ body {
     background-color: var(--brand);
     border-color: var(--brand);
     transition: all 0.3s ease;
+}
+
+.bg-dark-light {
+    background-color: #343a40;
+    border: 1px solid #495057;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .btn-success:hover {
@@ -62,12 +70,6 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     white-space: nowrap;
-}
-.hero-section {
-    background: linear-gradient(180deg, var(--brand-light), rgba(255,255,255,0));
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
 }
 
 .navbar-nav .nav-link {
@@ -392,18 +394,18 @@ footer a:hover {
 
 /* Progress bars verdes */
 .progress-bar {
-    background-color: var(--primary-green);
+    background-color: var(--success-green);
 }
 
 /* Badges verdes */
 .badge-success {
-    background-color: var(--primary-green);
+    background-color: var(--success-green);
 }
 
 /* Alerts personalizados */
 .alert-success {
     background-color: rgba(25, 135, 84, 0.1);
-    border-color: var(--primary-green);
+    border-color: var(--success-green);
     color: var(--dark-green);
 }
 
@@ -419,7 +421,7 @@ html {
 }
 
 .interactive-element:hover {
-    color: var(--primary-green);
+    color: var(--success-green);
 }
 
 /* TODO: Agregar más estilos específicos para otras páginas cuando se creen */

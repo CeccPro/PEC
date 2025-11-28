@@ -5,7 +5,7 @@
             <h2 class="display-4 fw-bold text-success mb-4">
                 <?php echo $translations['benefits_title']; ?>
             </h2>
-            <p class="lead text-muted">
+            <p class="lead text-light">
                 <?php echo $translations['benefits_lead']; ?>
             </p>
         </div>
@@ -72,38 +72,38 @@
         <!-- Estadísticas ambientales -->
         <div class="row g-4">
             <div class="col-lg-3 col-md-6">
-                <div class="card text-center border-0 bg-light h-100">
-                    <div class="card-body">
+                <div class="card text-center border-0 bg-dark h-100">
+                    <div class="card-body card-dark">
                         <i class="bi bi-cloud text-success" style="font-size: 3rem;"></i>
                         <h3 class="text-success mt-3">48 lbs</h3>
-                        <p class="text-muted"><?php echo $translations['stat_co2_absorbed']; ?></p>
+                        <p class="text-light"><?php echo $translations['stat_co2_absorbed']; ?></p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <div class="card text-center border-0 bg-light h-100">
-                    <div class="card-body">
+                <div class="card text-center border-0 bg-dark h-100">
+                    <div class="card-body card-dark">
                         <i class="bi bi-droplet text-success" style="font-size: 3rem;"></i>
                         <h3 class="text-success mt-3">260 lbs</h3>
-                        <p class="text-muted"><?php echo $translations['stat_oxygen_produced']; ?></p>
+                        <p class="text-light"><?php echo $translations['stat_oxygen_produced']; ?></p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <div class="card text-center border-0 bg-light h-100">
-                    <div class="card-body">
+                <div class="card text-center border-0 bg-dark h-100">
+                    <div class="card-body card-dark">
                         <i class="bi bi-thermometer text-success" style="font-size: 3rem;"></i>
                         <h3 class="text-success mt-3">9°F</h3>
-                        <p class="text-muted"><?php echo $translations['stat_temp_reduction']; ?></p>
+                        <p class="text-light"><?php echo $translations['stat_temp_reduction']; ?></p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <div class="card text-center border-0 bg-light h-100">
-                    <div class="card-body">
+                <div class="card text-center border-0 bg-dark h-100">
+                    <div class="card-body card-dark">
                         <i class="bi bi-bug text-success" style="font-size: 3rem;"></i>
                         <h3 class="text-success mt-3">80%</h3>
-                        <p class="text-muted"><?php echo $translations['stat_biodiversity_percentage']; ?></p>
+                        <p class="text-light"><?php echo $translations['stat_biodiversity_percentage']; ?></p>
                     </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@
     </section>
     
     <!-- Beneficios Sociales -->
-    <section class="py-5 bg-light rounded mb-5 page-section">
+    <section class="py-5 bg-dark rounded mb-5 page-section">
         <div class="container">
                 <h2 class="text-center text-success mb-5">
                 <i class="bi bi-people me-3"></i>
@@ -121,36 +121,36 @@
             <div class="row g-4">
                 <div class="col-lg-4">
                     <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
+                        <div class="card-body card-dark text-center">
                             <div class="bg-success rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
                                 <i class="bi bi-heart text-white fs-2"></i>
                             </div>
                             <h5 class="text-success"><?php echo $translations['social_benefit_health_title']; ?></h5>
-                            <p class="text-muted"><?php echo $translations['social_benefit_health_desc']; ?></p>
+                            <p class="text-light"><?php echo $translations['social_benefit_health_desc']; ?></p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="col-lg-4">
                     <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
+                        <div class="card-body card-dark text-center">
                             <div class="bg-success rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
                                 <i class="bi bi-house text-white fs-2"></i>
                             </div>
                             <h5 class="text-success"><?php echo $translations['social_benefit_environment_title']; ?></h5>
-                            <p class="text-muted"><?php echo $translations['social_benefit_environment_desc']; ?></p>
+                            <p class="text-light"><?php echo $translations['social_benefit_environment_desc']; ?></p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="col-lg-4">
                     <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
+                        <div class="card-body card-dark text-center">
                             <div class="bg-success rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
                                 <i class="bi bi-book text-white fs-2"></i>
                             </div>
                             <h5 class="text-success"><?php echo $translations['social_benefit_education_title']; ?></h5>
-                            <p class="text-muted"><?php echo $translations['social_benefit_education_desc']; ?></p>
+                            <p class="text-light"><?php echo $translations['social_benefit_education_desc']; ?></p>
                         </div>
                     </div>
                 </div>
@@ -175,13 +175,13 @@
                 
                 <div class="row g-3">
                     <div class="col-12">
-                        <div class="d-flex align-items-start p-3 border-start border-success border-4 bg-light">
+                        <div class="d-flex align-items-start p-3 border-start border-success border-4 bg-dark">
                             <div class="bg-success rounded-circle p-2 me-3 flex-shrink-0">
                                 <i class="bi bi-briefcase text-white"></i>
                             </div>
                             <div>
                                 <h6 class="mb-1"><?php echo $translations['economic_benefit_jobs']; ?></h6>
-                                <small class="text-muted">
+                                <small class="text-light">
                                     <?php echo $translations['economic_benefit_jobs_desc']; ?>
                                 </small>
                             </div>
@@ -189,13 +189,13 @@
                     </div>
                     
                     <div class="col-12">
-                        <div class="d-flex align-items-start p-3 border-start border-success border-4 bg-light">
+                        <div class="d-flex align-items-start p-3 border-start border-success border-4 bg-dark">
                             <div class="bg-success rounded-circle p-2 me-3 flex-shrink-0">
                                 <i class="bi bi-tree text-white"></i>
                             </div>
                             <div>
                                 <h6 class="mb-1"><?php echo $translations['economic_benefit_products']; ?></h6>
-                                <small class="text-muted">
+                                <small class="text-light">
                                     <?php echo $translations['economic_benefit_products_desc']; ?>
                                 </small>
                             </div>
@@ -203,13 +203,13 @@
                     </div>
                     
                     <div class="col-12">
-                        <div class="d-flex align-items-start p-3 border-start border-success border-4 bg-light">
+                        <div class="d-flex align-items-start p-3 border-start border-success border-4 bg-dark">
                             <div class="bg-success rounded-circle p-2 me-3 flex-shrink-0">
                                 <i class="bi bi-camera text-white"></i>
                             </div>
                             <div>
                                 <h6 class="mb-1"><?php echo $translations['economic_benefit_ecotourism']; ?></h6>
-                                <small class="text-muted">
+                                <small class="text-light">
                                     <?php echo $translations['economic_benefit_ecotourism_desc']; ?>
                                 </small>
                             </div>

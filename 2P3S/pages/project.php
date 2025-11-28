@@ -7,13 +7,13 @@
                 <h2 class="display-4 fw-bold mb-3"><?php echo $translations['project_theme']; ?></h2>
                 <p class="lead mb-4"><?php echo $translations['project_description']; ?></p>
                 <div class="mb-3">
-                    <span class="badge bg-light text-dark me-2">
+                    <span class="badge bg-dark text-light me-2">
                         <i class="bi bi-building"></i> <?php echo $translations['project_school']; ?>
                     </span>
-                    <span class="badge bg-light text-dark me-2">
+                    <span class="badge bg-dark text-light me-2">
                         <i class="bi bi-person"></i> <?php echo $translations['project_student']; ?>
                     </span>
-                    <span class="badge bg-light text-dark">
+                    <span class="badge bg-dark text-light">
                         <i class="bi bi-people"></i> <?php echo $translations['project_group_label'] . ' ' . $translations['project_group_value']; ?>
                     </span>
                 </div>
@@ -38,7 +38,7 @@
 </section>
 
 <!-- Materias y Aplicaciones -->
-<section class="py-5 bg-light page-section">
+<section class="py-5 bg-dark page-section">
     <div class="container">
         <h2 class="display-6 fw-bold text-center mb-5"><?php echo $translations['project_integration_disciplines']; ?></h2>
         
@@ -59,7 +59,7 @@
                             </span>
                             <div class="text-start">
                                 <strong><?php echo $subject['title']; ?></strong>
-                                <div class="small text-muted"><?php echo $subject['content']; ?></div>
+                                <div class="small text-light"><?php echo $subject['content']; ?></div>
                             </div>
                         </button>
                     <?php $first = false; endforeach; ?>
@@ -79,9 +79,9 @@
                                         <?php if (!empty($subject['role'])):?><p class="mb-0 text-success fw-semibold"><?php echo $subject['role']; ?></p><?php endif; ?>
                                     </div>
                                 </div>
-                                <p class="text-muted"><?php echo $subject['content']; ?></p>
+                                <p class="text-light"><?php echo $subject['content']; ?></p>
                                 <?php if (!empty($subject['details'])): ?>
-                                    <p class="text-muted mb-2"><?php echo $subject['details']; ?></p>
+                                    <p class="text-light mb-2"><?php echo $subject['details']; ?></p>
                                 <?php endif; ?>
                                 <?php if (!empty($subject['tasks']) && is_array($subject['tasks'])): ?>
                                     <h6 class="text-success"><?php echo $translations['subject_tasks_title'] ?? 'Actividades'; ?></h6>
@@ -126,7 +126,7 @@
                     <div class="col-md-6">
                         <div class="d-flex">
                             <div class="flex-shrink-0">
-                                <div class="bg-primary rounded-circle p-3">
+                                <div class="bg-success rounded-circle p-3">
                                     <i class="bi bi-bullseye text-white"></i>
                                 </div>
                             </div>
@@ -140,7 +140,7 @@
                     <div class="col-md-6">
                         <div class="d-flex">
                             <div class="flex-shrink-0">
-                                <div class="bg-info rounded-circle p-3">
+                                <div class="bg-success rounded-circle p-3">
                                     <i class="bi bi-gear text-white"></i>
                                 </div>
                             </div>
@@ -185,7 +185,7 @@
 </section>
 
 <!-- Proceso de Desarrollo -->
-<section class="py-5 bg-light page-section">
+<section class="py-5 bg-dark page-section">
     <div class="container">
         <h2 class="display-6 fw-bold text-center mb-5"><?php echo $translations['project_development_process']; ?></h2>
         
@@ -193,20 +193,20 @@
             <div class="col-lg-10 mx-auto">
                 <div class="timeline">
                     <div class="timeline-item d-flex align-items-center mb-4">
-                        <div class="timeline-marker bg-primary rounded-circle p-3 me-4">
+                        <div class="timeline-marker bg-success rounded-circle p-3 me-4">
                             <span class="text-white fw-bold">1</span>
                         </div>
-                        <div class="timeline-content">
+                        <div class="timeline-content bg-dark-light">
                             <h5><?php echo $translations['timeline_step_1']; ?></h5>
                             <p><?php echo $translations['timeline_step_1_desc']; ?></p>
                         </div>
                     </div>
                     
                     <div class="timeline-item d-flex align-items-center mb-4">
-                        <div class="timeline-marker bg-info rounded-circle p-3 me-4">
+                        <div class="timeline-marker bg-success rounded-circle p-3 me-4">
                             <span class="text-white fw-bold">2</span>
                         </div>
-                        <div class="timeline-content">
+                        <div class="timeline-content bg-dark-light">
                             <h5><?php echo $translations['timeline_step_2']; ?></h5>
                             <p><?php echo $translations['timeline_step_2_desc']; ?></p>
                         </div>
@@ -216,7 +216,7 @@
                         <div class="timeline-marker bg-warning rounded-circle p-3 me-4">
                             <span class="text-white fw-bold">3</span>
                         </div>
-                        <div class="timeline-content">
+                        <div class="timeline-content bg-dark-light">
                             <h5><?php echo $translations['timeline_step_3']; ?></h5>
                             <p><?php echo $translations['timeline_step_3_desc']; ?></p>
                         </div>
@@ -226,7 +226,7 @@
                         <div class="timeline-marker bg-success rounded-circle p-3 me-4">
                             <span class="text-white fw-bold">4</span>
                         </div>
-                        <div class="timeline-content">
+                        <div class="timeline-content bg-dark-light">
                             <h5><?php echo $translations['timeline_step_4']; ?></h5>
                             <p><?php echo $translations['timeline_step_4_desc']; ?></p>
                         </div>
@@ -245,14 +245,14 @@
         <div class="row g-4 mb-5">
             <div class="col-lg-6">
                 <div class="card border-0 shadow-lg h-100">
-                    <div class="card-body p-4">
+                    <div class="card-body card-dark p-4">
                         <div class="d-flex align-items-center mb-3">
-                            <div class="bg-primary rounded-circle p-3 me-3">
+                            <div class="bg-success rounded-circle p-3 me-3">
                                 <i class="bi bi-calculator text-white fs-3"></i>
                             </div>
                             <h4 class="mb-0"><?php echo $translations['project_calc_title']; ?></h4>
                         </div>
-                        <p class="text-muted mb-4"><?php echo $translations['project_calc_desc']; ?></p>
+                        <p class="text-light mb-4"><?php echo $translations['project_calc_desc']; ?></p>
                         <div class="mb-3">
                             <h6 class="text-success"><?php echo $translations['project_features_title']; ?></h6>
                             <ul class="list-unstyled ms-3">
@@ -262,7 +262,7 @@
                                 <li><i class="bi bi-check text-success me-2"></i><?php echo $translations['project_feature_calc_4']; ?></li>
                             </ul>
                         </div>
-                        <a href="index.php?page=calculator" class="btn btn-primary">
+                        <a href="index.php?page=calculator" class="btn btn-success">
                             <i class="bi bi-calculator me-2"></i><?php echo $translations['project_use_calculator']; ?>
                         </a>
                     </div>
@@ -271,14 +271,14 @@
             
             <div class="col-lg-6">
                 <div class="card border-0 shadow-lg h-100">
-                    <div class="card-body p-4">
+                    <div class="card-body card-dark p-4">
                         <div class="d-flex align-items-center mb-3">
                             <div class="bg-success rounded-circle p-3 me-3">
                                 <i class="bi bi-globe text-white fs-3"></i>
                             </div>
                             <h4 class="mb-0"><?php echo $translations['project_platform_title']; ?></h4>
                         </div>
-                        <p class="text-muted mb-4"><?php echo $translations['project_platform_desc']; ?></p>
+                        <p class="text-light mb-4"><?php echo $translations['project_platform_desc']; ?></p>
                         <div class="mb-3">
                             <h6 class="text-success"><?php echo $translations['project_characteristics']; ?></h6>
                             <ul class="list-unstyled ms-3">

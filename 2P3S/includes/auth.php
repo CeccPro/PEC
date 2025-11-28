@@ -19,9 +19,9 @@ class Auth {
                     'created_at' => date('Y-m-d H:i:s'),
                     'last_login' => null
                 ],
-                'israel' => [
-                    'username' => 'israel',
-                    'email' => 'israel@reforestacion.com',
+                'ceccpro' => [
+                    'username' => 'ceccpro',
+                    'email' => 'ceccpro@reforestacion.com',
                     'password' => password_hash('123456', PASSWORD_DEFAULT),
                     'role' => 'admin',
                     'created_at' => date('Y-m-d H:i:s'),

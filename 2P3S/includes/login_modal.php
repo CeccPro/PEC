@@ -14,7 +14,7 @@
                         <div class="col-md-5 d-none d-md-flex align-items-stretch">
                             <div class="p-4 m-2 login-gradient d-flex flex-column justify-content-center text-white h-100 rounded-start">
                                 <h4 class="mb-3"><?php echo $translations['login_welcome'] ?? 'Bienvenido de nuevo'; ?></h4>
-                                <p class="mb-0 text-muted-dark small"><?php echo $translations['login_note'] ?? 'Inicia sesión para acceder a tu cuenta y participar.'; ?></p>
+                                <p class="mb-0 text-light-dark small"><?php echo $translations['login_note'] ?? 'Inicia sesión para acceder a tu cuenta y participar.'; ?></p>
                             </div>
                         </div>
                         <div class="col-md-7">
@@ -32,9 +32,9 @@
                             <div class="d-flex justify-content-between align-items-center mb-3">
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="remember" name="remember">
-                                    <label class="form-check-label text-muted-dark" for="remember"><?php echo $translations['remember_me']; ?></label>
+                                    <label class="form-check-label text-light-dark" for="remember"><?php echo $translations['remember_me']; ?></label>
                                 </div>
-                                <a href="index.php?page=contact" class="small text-muted-dark"><?php echo $translations['forgot_password'] ?? '¿Olvidaste tu contraseña?'; ?></a>
+                                <a href="index.php?page=contact" class="small text-light-dark"><?php echo $translations['forgot_password'] ?? '¿Olvidaste tu contraseña?'; ?></a>
                             </div>
                     
                             <div class="alert alert-danger d-none" id="loginError"></div>
@@ -48,7 +48,7 @@
                 
                 <hr class="border-secondary border-opacity-25">
                 <div class="text-center">
-                    <small class="text-muted-dark">
+                    <small class="text-light-dark">
                         <?php echo $translations['register_link']; ?>
                         <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss="modal" class="text-decoration-underline text-light">
                             <?php echo $translations['register_button']; ?>

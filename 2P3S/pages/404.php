@@ -7,14 +7,14 @@
                     4<i class="bi bi-tree-fill mx-3"></i>4
                 </div>
                 <h2 class="display-4 text-success mb-3"><?php echo $translations['404_title']; ?></h2>
-                <p class="lead text-muted mb-4">
+                <p class="lead text-light mb-4">
                     <?php echo $translations['404_message']; ?>
                 </p>
             </div>
             
             <!-- Sugerencias -->
             <div class="card border-success shadow-sm mb-4 page-section">
-                <div class="card-body">
+                <div class="card-body card-dark">
                     <h5 class="text-success mb-3"><?php echo $translations['404_what_to_do']; ?></h5>
                     <div class="d-grid gap-2">
                         <a href="index.php" class="btn btn-success">
@@ -44,8 +44,8 @@
             </div>
             
             <!-- Búsqueda simple -->
-            <div class="card border-0 bg-light page-section">
-                <div class="card-body">
+            <div class="card border-0 bg-dark page-section">
+                <div class="card-body card-dark">
                     <h6 class="text-success mb-3"><?php echo $translations['404_search_prompt']; ?></h6>
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="<?php echo $translations['404_search_placeholder']; ?>" id="searchInput">
@@ -54,7 +54,7 @@
                         </button>
                     </div>
                     <div class="mt-3">
-                        <small class="text-muted">
+                        <small class="text-light">
                             <?php echo $translations['404_popular_terms']; ?>: 
                             <a href="index.php?page=benefits" class="text-success text-decoration-none"><?php echo $translations['404_popular_term_benefits']; ?></a>, 
                             <a href="index.php?page=how-to" class="text-success text-decoration-none"><?php echo $translations['404_popular_term_plant']; ?></a>, 

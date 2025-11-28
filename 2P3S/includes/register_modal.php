@@ -14,7 +14,7 @@
                         <div class="col-md-5 d-none d-md-flex align-items-stretch">
                             <div class="p-4 bg-dark d-flex flex-column justify-content-center text-white h-100 rounded-start">
                                 <h4 class="mb-2"><?php echo $translations['register_welcome'] ?? 'Crea tu cuenta'; ?></h4>
-                                <p class="mb-0 text-muted-dark small"><?php echo $translations['register_note'] ?? 'Regístrate y únete a la iniciativa.'; ?></p>
+                                <p class="mb-0 text-light-dark small"><?php echo $translations['register_note'] ?? 'Regístrate y únete a la iniciativa.'; ?></p>
                             </div>
                         </div>
                         <div class="col-md-7">
@@ -52,7 +52,7 @@
                 
                 <hr class="border-secondary border-opacity-25">
                 <div class="text-center">
-                    <small class="text-muted-dark">
+                    <small class="text-light-dark">
                         <?php echo $translations['register_already']; ?>
                         <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal" class="text-decoration-underline text-light">
                             <?php echo $translations['login_button'] ?? 'Iniciar sesión'; ?>

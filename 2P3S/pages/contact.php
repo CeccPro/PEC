@@ -5,7 +5,7 @@
             <h2 class="display-4 fw-bold text-success mb-4">
                 <?php echo $translations['contact_title']; ?>
             </h2>
-            <p class="lead text-muted">
+            <p class="lead text-light">
                 <?php echo $translations['contact_desc']; ?>
             </p>
         </div>
@@ -21,7 +21,7 @@
                         <?php echo $translations['contact_send_msg_title']; ?>
                     </h4>
                 </div>
-                <div class="card-body p-4">
+                <div class="card-body card-dark p-4">
                     <form id="contactForm">
                         <div class="row g-3">
                             <div class="col-md-6">
@@ -98,12 +98,12 @@
                 <!-- Información general -->
                 <div class="col-12">
                     <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
+                        <div class="card-body card-dark text-center">
                             <div class="bg-success rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
                                 <i class="bi bi-geo-alt text-white fs-4"></i>
                             </div>
                             <h5 class="text-success"><?php echo $translations['contact_location_title']; ?></h5>
-                            <p class="text-muted mb-0">
+                            <p class="text-light mb-0">
                                 Carretera federal México - Puebla Km. 22.5<br>
                                 Colonia San Juan Tlalpizáhuac,<br>
                                 Valle de Chalco Solidaridad C.P. 56618<br>
@@ -114,12 +114,12 @@
                 
                 <div class="col-12">
                     <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
+                        <div class="card-body card-dark text-center">
                             <div class="bg-success rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
                                 <i class="bi bi-telephone text-white fs-4"></i>
                             </div>
                             <h5 class="text-success"><?php echo $translations['contact_phone_title']; ?></h5>
-                            <p class="text-muted mb-0">
+                            <p class="text-light mb-0">
                                 [Placeholder]<br>
                                 <small>Lun-Vie: 7:00 AM - 3:00 PM</small>
                             </p>
@@ -129,12 +129,12 @@
                 
                 <div class="col-12">
                     <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
+                        <div class="card-body card-dark text-center">
                             <div class="bg-success rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
                                 <i class="bi bi-envelope text-white fs-4"></i>
                             </div>
                             <h5 class="text-success"><?php echo $translations['contact_email_title']; ?></h5>
-                            <p class="text-muted mb-0">
+                            <p class="text-light mb-0">
                                 carlos.cs240021@cbta35.edu.mx<br>
                                 <small>Respuesta en 24 horas</small>
                             </p>
@@ -145,7 +145,7 @@
                 <!-- Redes sociales -->
                 <div class="col-12">
                     <div class="card border-0 shadow-sm">
-                        <div class="card-body text-center">                            <h5 class="text-success mb-3"><?php echo $translations['contact_follow_us_title']; ?></h5>
+                        <div class="card-body card-dark text-center">                            <h5 class="text-success mb-3"><?php echo $translations['contact_follow_us_title']; ?></h5>
                             <div class="d-flex justify-content-center gap-3">
                                 <!-- TODO: Agregar enlaces reales a redes sociales -->
                                 <a href="#" class="btn btn-outline-success rounded-circle" style="width: 50px; height: 50px;">
@@ -161,7 +161,7 @@
                                     <i class="bi bi-linkedin"></i>
                                 </a>
                             </div>
-                            <p class="text-muted small mt-3 mb-0">
+                            <p class="text-light small mt-3 mb-0">
                                 <?php echo $translations['contact_follow_us_text']; ?>
                             </p>
                         </div>
@@ -183,7 +183,7 @@
     </section>
     
     <!-- FAQ -->
-    <section class="py-5 bg-light rounded page-section">
+    <section class="py-5 bg-dark rounded page-section">
         <div class="container">
             <h3 class="text-center text-success mb-5"><?php echo $translations['contact_faq_title']; ?></h3>
             
@@ -249,12 +249,12 @@
     </main>
 
 <!-- Información Adicional -->
-<section class="py-5 bg-light">
+<section class="py-5 bg-dark">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
                 <h3 class="text-success mb-4"><?php echo $translations['contact_about_project_title']; ?></h3>
-                <p class="lead text-muted mb-4">
+                <p class="lead text-light mb-4">
                     <?php echo $translations['contact_about_project_content']; ?>
                 </p>
                 
@@ -266,7 +266,7 @@
                         </span>
                     </div>
                     <div class="col-auto">
-                        <span class="badge bg-info fs-6 px-3 py-2">
+                        <span class="badge bg-success fs-6 px-3 py-2">
                             <i class="bi bi-gear me-1"></i>
                             <?php echo $translations['contact_dev_badge']; ?>
                         </span>

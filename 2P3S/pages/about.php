@@ -5,7 +5,7 @@
                 <h2 class="display-4 fw-bold text-success mb-4">
                     <?php echo $translations['nav_about']; ?>
                 </h2>
-                <p class="lead text-muted">
+                <p class="lead text-light">
                     <?php echo $translations['about_lead']; ?>
                 </p>
             </div>
@@ -36,24 +36,24 @@
             
             <div class="row g-3">
                 <div class="col-sm-6">
-                    <div class="d-flex align-items-center p-3 bg-light rounded">
+                    <div class="d-flex align-items-center p-3 bg-dark rounded">
                         <div class="bg-success rounded-circle p-2 me-3">
                             <i class="bi bi-globe text-white"></i>
                         </div>
                         <div>
                             <h6 class="mb-0">15.3 billones</h6>
-                            <small class="text-muted"><?php echo $translations['about_stats_trees_world']; ?></small>
+                            <small class="text-light"><?php echo $translations['about_stats_trees_world']; ?></small>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="d-flex align-items-center p-3 bg-light rounded">
+                    <div class="d-flex align-items-center p-3 bg-dark rounded">
                         <div class="bg-success rounded-circle p-2 me-3">
                             <i class="bi bi-tree text-white"></i>
                         </div>
                         <div>
                             <h6 class="mb-0">10 millones</h6>
-                            <small class="text-muted"><?php echo $translations['about_stats_lost_per_year']; ?></small>
+                            <small class="text-light"><?php echo $translations['about_stats_lost_per_year']; ?></small>
                         </div>
                     </div>
                 </div>
@@ -72,36 +72,36 @@
         <div class="row">
             <div class="col-lg-4 mb-4">
                 <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center">
+                    <div class="card-body card-dark text-center">
                         <div class="bg-success rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
                             <i class="bi bi-seedling text-white fs-2"></i>
                         </div>
                         <h5 class="text-success"><?php echo $translations['about_plantation_title']; ?></h5>
-                        <p class="text-muted small"><?php echo $translations['about_plantation_desc']; ?></p>
+                        <p class="text-light small"><?php echo $translations['about_plantation_desc']; ?></p>
                     </div>
                 </div>
             </div>
             
             <div class="col-lg-4 mb-4">
                 <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center">
+                    <div class="card-body card-dark text-center">
                         <div class="bg-success rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
                             <i class="bi bi-arrow-clockwise text-white fs-2"></i>
                         </div>
                         <h5 class="text-success"><?php echo $translations['about_restoration_title']; ?></h5>
-                        <p class="text-muted small"><?php echo $translations['about_restoration_desc']; ?></p>
+                        <p class="text-light small"><?php echo $translations['about_restoration_desc']; ?></p>
                     </div>
                 </div>
             </div>
             
             <div class="col-lg-4 mb-4">
                 <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center">
+                    <div class="card-body card-dark text-center">
                         <div class="bg-success rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
                             <i class="bi bi-shield-check text-white fs-2"></i>
                         </div>
                         <h5 class="text-success"><?php echo $translations['about_conservation_title']; ?></h5>
-                        <p class="text-muted small"><?php echo $translations['about_conservation_desc']; ?></p>
+                        <p class="text-light small"><?php echo $translations['about_conservation_desc']; ?></p>
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@
     </section>
     
     <!-- Tipos de Reforestación -->
-    <section class="py-5 bg-light rounded">
+    <section class="py-5 bg-dark rounded">
         <div class="container">
             <h2 class="text-center text-success mb-5"><?php echo $translations['about_types_title']; ?></h2>
             
@@ -122,7 +122,7 @@
                                 <?php echo $translations['about_natural_title']; ?>
                             </h5>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body card-dark">
                             <p class="mb-3">
                                 <?php echo $translations['about_natural_desc']; ?>
                             </p>
@@ -152,7 +152,7 @@
                                 <?php echo $translations['about_artificial_title']; ?>
                             </h5>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body card-dark">
                             <p class="mb-3">
                                 <?php echo $translations['about_artificial_desc']; ?>
                             </p>
@@ -188,7 +188,7 @@
                         <span class="text-white fw-bold fs-3">1</span>
                     </div>
                     <h5 class="text-success"><?php echo $translations['about_step_1_title']; ?></h5>
-                    <p class="text-muted small"><?php echo $translations['about_step_1_desc']; ?></p>
+                    <p class="text-light small"><?php echo $translations['about_step_1_desc']; ?></p>
                 </div>
             </div>
             
@@ -198,7 +198,7 @@
                         <span class="text-white fw-bold fs-3">2</span>
                     </div>
                     <h5 class="text-success"><?php echo $translations['about_step_2_title']; ?></h5>
-                    <p class="text-muted small"><?php echo $translations['about_step_2_desc']; ?></p>
+                    <p class="text-light small"><?php echo $translations['about_step_2_desc']; ?></p>
                 </div>
             </div>
             
@@ -208,7 +208,7 @@
                         <span class="text-white fw-bold fs-3">3</span>
                     </div>
                     <h5 class="text-success"><?php echo $translations['about_step_3_title']; ?></h5>
-                    <p class="text-muted small"><?php echo $translations['about_step_3_desc']; ?></p>
+                    <p class="text-light small"><?php echo $translations['about_step_3_desc']; ?></p>
                 </div>
             </div>
             
@@ -218,7 +218,7 @@
                         <span class="text-white fw-bold fs-3">4</span>
                     </div>
                     <h5 class="text-success"><?php echo $translations['about_step_4_title']; ?></h5>
-                    <p class="text-muted small"><?php echo $translations['about_step_4_desc']; ?></p>
+                    <p class="text-light small"><?php echo $translations['about_step_4_desc']; ?></p>
                 </div>
             </div>
         </div>

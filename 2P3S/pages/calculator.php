@@ -33,7 +33,7 @@
                             <?php echo $translations['carbon_calculator_title']; ?>
                         </h3>
                     </div>
-                    <div class="card-body p-4">
+                    <div class="card-body card-dark p-4">
                         <form id="carbonCalculator">
                             <div class="row g-3">
                                 <!-- Transporte -->
@@ -97,7 +97,7 @@
                                     <div class="mb-3">
                                         <label class="form-label"><?php echo $translations['label_recycling_rate']; ?></label>
                                         <input type="range" class="form-range" id="recyclingRate" min="0" max="100" value="50">
-                                        <span id="recyclingValue" class="text-muted">50%</span>
+                                        <span id="recyclingValue" class="text-light">50%</span>
                                     </div>                                    <div class="mb-3">
                                         <label class="form-label"><?php echo $translations['label_waste_bags_week']; ?></label>
                                         <input type="number" class="form-control" id="wasteBags" min="0" value="0">
@@ -120,7 +120,7 @@
 </section>
 
 <!-- Resultados -->
-<section class="py-5 bg-light page-section">
+<section class="py-5 bg-dark page-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 mx-auto">
@@ -130,36 +130,36 @@
                     <div class="row g-4 mb-5">
                         <div class="col-md-4">
                             <div class="card h-100 border-0 shadow-sm text-center">
-                                <div class="card-body">
+                                <div class="card-body card-dark">
                                     <div class="bg-danger rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
                                         <i class="bi bi-cloud text-white fs-2"></i>
                                     </div>
                                     <h3 id="totalCarbon" class="text-danger fw-bold">0 kg</h3>
-                                    <p class="text-muted"><?php echo $translations['results_co2_annual']; ?></p>
+                                    <p class="text-light"><?php echo $translations['results_co2_annual']; ?></p>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="col-md-4">
                             <div class="card h-100 border-0 shadow-sm text-center">
-                                <div class="card-body">
+                                <div class="card-body card-dark">
                                     <div class="bg-success rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
                                         <i class="bi bi-tree text-white fs-2"></i>
                                     </div>
                                     <h3 id="treesNeeded" class="text-success fw-bold">0</h3>
-                                    <p class="text-muted"><?php echo $translations['results_trees_needed']; ?></p>
+                                    <p class="text-light"><?php echo $translations['results_trees_needed']; ?></p>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="col-md-4">
                             <div class="card h-100 border-0 shadow-sm text-center">
-                                <div class="card-body">
-                                    <div class="bg-info rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                <div class="card-body card-dark">
+                                    <div class="bg-success rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
                                         <i class="bi bi-calendar text-white fs-2"></i>
                                     </div>
                                     <h3 id="yearsToNeutralize" class="text-info fw-bold">0</h3>
-                                    <p class="text-muted"><?php echo $translations['results_years_to_neutralize']; ?></p>
+                                    <p class="text-light"><?php echo $translations['results_years_to_neutralize']; ?></p>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +168,7 @@
                     <div class="row g-4 mb-4">
                         <div class="col-lg-6">
                             <div class="card border-0 shadow-sm h-100">
-                                <div class="card-body">
+                                <div class="card-body card-dark">
                                     <h5 class="text-success mb-4">
                                         <i class="bi bi-pie-chart me-2"></i>
                                         <?php echo $translations['chart_distribution_title']; ?>
@@ -181,7 +181,7 @@
                         
                         <div class="col-lg-6">
                             <div class="card border-0 shadow-sm h-100">
-                                <div class="card-body">
+                                <div class="card-body card-dark">
                                     <h5 class="text-success mb-4">
                                         <i class="bi bi-bar-chart me-2"></i>
                                         <?php echo $translations['chart_comparison_title']; ?>
@@ -196,7 +196,7 @@
                     
                     <!-- Gráfico de proyección temporal -->
                     <div class="card border-0 shadow-sm mb-4">
-                        <div class="card-body">                            <h5 class="text-success mb-4">
+                        <div class="card-body card-dark">                            <h5 class="text-success mb-4">
                                 <i class="bi bi-graph-up me-2"></i>
                                 <?php echo $translations['chart_projection_title']; ?>
                             </h5>
@@ -217,13 +217,13 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <div class="card border-0 shadow-lg">
-                    <div class="card-header bg-info text-white">
+                    <div class="card-header bg-success text-white">
                         <h3 class="mb-0">
                             <i class="bi bi-tree-fill me-2"></i>
                             <?php echo $translations['reforestation_calc_title']; ?>
                         </h3>
                     </div>
-                    <div class="card-body p-4">
+                    <div class="card-body card-dark p-4">
                         <form id="reforestationCalculator">
                             <div class="row g-3">
                                 <div class="col-md-6">
@@ -250,7 +250,7 @@
                             </div>
                             
                             <div class="text-center mt-4">
-                                <button type="button" class="btn btn-info btn-lg px-5" onclick="calculateReforestation()">
+                                <button type="button" class="btn btn-success btn-lg px-5" onclick="calculateReforestation()">
                                     <i class="bi bi-tree me-2"></i>
                                     <?php echo $translations['calc_button_calculate_reforestation']; ?>
                                 </button>
@@ -260,39 +260,39 @@
                         <div id="reforestationResults" class="mt-4 d-none">
                             <hr>
                             <div class="row g-3">                        <div class="col-md-3 text-center">
-                            <div class="p-3 bg-light rounded">
+                            <div class="p-3 bg-dark rounded">
                                 <div class="mb-2">
                                     <i class="bi bi-cloud-minus text-success fs-3"></i>
                                 </div>
                                 <h4 id="co2Absorbed" class="text-success mb-1">0 kg</h4>
-                                <small class="text-muted">CO₂ absorbido anualmente</small>
+                                <small class="text-light">CO₂ absorbido anualmente</small>
                             </div>
                         </div>
                         <div class="col-md-3 text-center">
-                            <div class="p-3 bg-light rounded">
+                            <div class="p-3 bg-dark rounded">
                                 <div class="mb-2">
                                     <i class="bi bi-wind text-info fs-3"></i>
                                 </div>
                                 <h4 id="oxygenProduced" class="text-info mb-1">0 kg</h4>
-                                <small class="text-muted">Oxígeno producido anualmente</small>
+                                <small class="text-light">Oxígeno producido anualmente</small>
                             </div>
                         </div>
                         <div class="col-md-3 text-center">
-                            <div class="p-3 bg-light rounded">
+                            <div class="p-3 bg-dark rounded">
                                 <div class="mb-2">
                                     <i class="bi bi-graph-up text-success fs-3"></i>
                                 </div>
                                 <h4 id="totalCo2" class="text-success mb-1">0 ton</h4>
-                                <small class="text-muted">CO₂ total en el período</small>
+                                <small class="text-light">CO₂ total en el período</small>
                             </div>
                         </div>
                         <div class="col-md-3 text-center">
-                            <div class="p-3 bg-light rounded">
+                            <div class="p-3 bg-dark rounded">
                                 <div class="mb-2">
                                     <i class="bi bi-car-front text-warning fs-3"></i>
                                 </div>
                                 <h4 id="equivalentCars" class="text-warning mb-1">0</h4>
-                                <small class="text-muted">Autos compensados</small>
+                                <small class="text-light">Autos compensados</small>
                             </div>
                         </div>
                             </div>
@@ -305,7 +305,7 @@
 </section>
 
 <!-- Matemáticas del Proyecto -->
-<section class="py-5 bg-light page-section">
+<section class="py-5 bg-dark page-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 mx-auto">
@@ -314,20 +314,20 @@
                 <div class="row g-4">
                     <div class="col-md-6">
                         <div class="card border-0 shadow-sm h-100">
-                            <div class="card-body">
+                            <div class="card-body card-dark">
                                 <h5 class="text-success mb-3">
                                     <i class="bi bi-calculator me-2"></i>
                                     <?php echo $translations['math_formulas_title']; ?>
                                 </h5>
-                                <div class="bg-light p-3 rounded mb-3">
+                                <div class="bg-dark p-3 rounded mb-3">
                                     <strong>Huella de Carbono:</strong><br>
                                     <code>CO₂ = Σ(Actividad × Factor de Emisión)</code>
                                 </div>
-                                <div class="bg-light p-3 rounded mb-3">
+                                <div class="bg-dark p-3 rounded mb-3">
                                     <strong>Absorción de CO₂:</strong><br>
                                     <code>Absorción = Árboles × Factor × Años</code>
                                 </div>
-                                <div class="bg-light p-3 rounded">
+                                <div class="bg-dark p-3 rounded">
                                     <strong>Compensación:</strong><br>
                                     <code>Árboles = CO₂_total ÷ Absorción_promedio</code>
                                 </div>
@@ -337,7 +337,7 @@
                     
                     <div class="col-md-6">
                         <div class="card border-0 shadow-sm h-100">
-                            <div class="card-body">
+                            <div class="card-body card-dark">
                                 <h5 class="text-success mb-3">
                                     <i class="bi bi-graph-up me-2"></i>
                                     <?php echo $translations['math_conversion_title']; ?>
@@ -823,7 +823,7 @@ canvas {
 }
 
 /* Asegurar que los gráficos no rompan el layout */
-.card-body {
+.card-body card-dark {
     padding: 1rem;
     overflow: hidden;
 }
@@ -839,7 +839,7 @@ canvas {
         font-size: 1rem;
     }
     
-    .card-body {
+    .card-body card-dark {
         padding: 0.75rem;
     }
 }
