@@ -47,7 +47,7 @@
             </nav>
             <div class="d-flex align-items-center gap-2">
                 <div class="dropdown me-2">
-                    <a class="btn btn-sm btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    <a class="btn btn-sm btn-black text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                         <i class="bi bi-globe"></i>
                         <span class="ms-1 text-uppercase"><?php echo strtoupper($lang); ?></span>
                     </a>

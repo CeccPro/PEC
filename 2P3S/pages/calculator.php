@@ -14,7 +14,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="bg-white rounded shadow-lg p-4 text-center">
-                    <img src="https://www.esagua.es/wp-content/uploads/2022/01/Calculo-de-huella-ambiental.png" alt="Calculadora de Huella Ambiental" class="img-fluid rounded">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF08KloR6eKVHtGhxdp1nMgrNoThNV26UdPw&s" alt="Calculadora de Huella Ambiental" class="img-fluid rounded" style="min-height: 200px;">
                 </div>
             </div>
         </div>
