@@ -316,7 +316,6 @@ includeHeader(t('login'), 'auth');
         <div class="text-center mt-4">
             <p class="text-muted">
                 <small>
-                    <!-- TODO: Agregar enlaces a términos de servicio y política de privacidad -->
                     Al registrarte, aceptas nuestros términos de servicio y política de privacidad
                 </small>
             </p>
@@ -337,9 +336,6 @@ document.getElementById('reg_confirm_password')?.addEventListener('input', funct
         this.setCustomValidity('');
     }
 });
-
-// Mostrar/ocultar contraseña (opcional - enhancement)
-// TODO: Agregar botones de toggle para mostrar/ocultar contraseñas
 </script>
 
 <?php includeFooter(); ?>

@@ -60,16 +60,13 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <!-- TODO: Cambia esto -->
-      <img src="https://placehold.co/1200x400/4caf50/ffffff?text=Imagen+Proyecto+Reforestacion+1" alt="Reforestación 1" class="d-block w-100">
+      <img style="height: 600px; object-fit: cover;" src="https://blog.fundacionjuanxxiii.org/hubfs/22marzo_7%20ventajas%20empresariales%20de%20participar%20en%20una%20campa%C3%B1a%20de%20reforestaci%C3%B3n.jpg" alt="Reforestación 1" class="d-block w-100">
     </div>
     <div class="carousel-item">
-      <!-- TODO: Cambia esto -->
-      <img src="https://placehold.co/1200x400/3caf60/ffffff?text=Imagen+Proyecto+Reforestacion+2" alt="Reforestación 2" class="d-block w-100">
+      <img style="height: 600px; object-fit: cover;" src="https://www.bbva.mx/content/dam/public-web/mexico/images/edufin-/persona/social-metatag/2021/septiembre/La_importancia_de_la_reforestacion_en_Mexico.jpg" alt="Reforestación 2" class="d-block w-100">
     </div>
     <div class="carousel-item">
-      <!-- TODO: Cambia esto -->
-      <img src="https://placehold.co/1200x400/7cff90/000000?text=Imagen+Proyecto+Reforestacion+3" alt="Reforestación 3" class="d-block w-100">
+      <img style="height: 600px; object-fit: cover;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSaPIMJktw5d--aG24kipNZB-DeV0F--q6Bg&s" alt="Reforestación 3" class="d-block w-100">
     </div>
   </div>
 
@@ -122,12 +119,11 @@
       <div class="pec-bloque">Fotos de los trabajos</div>
 
       <div class="pec-fotos">
+        <img src="https://cdn0.ecologiaverde.com/es/posts/9/6/2/que_es_la_reforestacion_definicion_sencilla_1269_0_600.jpg" alt="Image">
         <!-- TODO: Cambia esto -->
-        <img src="https://placehold.co/180x120/66bb6a/ffffff?text=Trabajo+1" alt="Trabajo 1">
+        <img src="https://www.lineaverdeestepona.com/lv/consejos-ambientales/reforestemos/img/reforestacion1.jpg" alt="Trabajo 2">
         <!-- TODO: Cambia esto -->
-        <img src="https://placehold.co/180x120/66bb6a/ffffff?text=Trabajo+2" alt="Trabajo 2">
-        <!-- TODO: Cambia esto -->
-        <img src="https://placehold.co/180x120/66bb6a/ffffff?text=Trabajo+3" alt="Trabajo 3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-ivWDQ7uo3pdFPx1EI4dUtgIRqwOx8ZBu5g&s" alt="Trabajo 3">
       </div>
     </section>  </main>
 

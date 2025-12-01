@@ -37,7 +37,6 @@ includeHeader(t('nav_home'), 'home');
                 </div>
             </div>
             <div class="col-md-6">
-                <!-- TODO: Reemplazar con imágenes reales del proyecto -->
                 <img style="width: 100%; height: auto;" src="https://www.iberdrola.com/documents/20125/40576/reforestacion_746x419.jpg/7ffde25d-e3a2-3e75-ba3d-b6e543dd0e24?t=1627463867254" 
                      class="img-fluid rounded shadow" 
                      alt="Bosque reforestado">
@@ -256,7 +255,6 @@ includeHeader(t('nav_home'), 'home');
         
         <div class="row">
             <div class="col-md-12">
-                <!-- TODO: Agregar infografía de servicios ecosistémicos -->
                 <img src="https://mx.fsc.org/sites/default/files/inline-images/SE.jpg" 
                      class="img-fluid rounded mb-4" 
                      alt="Servicios Ecosistémicos">
