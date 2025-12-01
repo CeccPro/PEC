@@ -1,0 +1,439 @@
+<?php
+session_start();
+require_once '../includes/config.php';
+require_once '../includes/auth.php';
+require_once '../includes/language.php';
+
+// Manejar cambio de idioma
+if (isset($_GET['lang']) && in_array($_GET['lang'], SUPPORTED_LANGUAGES)) {
+    $language = new Language();
+    $language->setLanguage($_GET['lang']);
+}
+
+// Inicializar sistema de idiomas
+$language = new Language();
+$lang = $language->getCurrentLanguage();
+$translations = $language->getTranslations($lang);
+
+// Verificar si el usuario está logueado
+$auth = new Auth();
+$isLoggedIn = $auth->isLoggedIn();
+$user = $isLoggedIn ? $auth->getCurrentUser() : null;
+
+// Configurar página actual
+$currentPage = 'subjects';
+$pageTitle = $translations['subject_matematicas_title'] . ' - ' . $translations['app_title'];
+
+include '../includes/header.php';
+?>
+
+<!-- Page Header -->
+<section class="py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="display-4 fw-bold mb-3">
+                    <i class="bi bi-calculator-fill me-3"></i>
+                    Matemáticas: Funciones y Derivadas en Reforestación
+                </h1>
+                <p class="lead mb-0">
+                    Aplicación de funciones y cálculo diferencial para modelar procesos de crecimiento forestal y optimización de recursos
+                </p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <i class="bi bi-graph-up display-1"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Role and Methodology -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card border-0 shadow-lg">
+                    <div class="card-body p-5">
+                        <h3 class="text-primary mb-4">
+                            <i class="bi bi-bullseye me-2"></i>
+                            Funciones y Derivadas en Proyectos de Reforestación
+                        </h3>
+                        <p class="lead mb-4">
+                            Las funciones matemáticas nos permiten modelar el crecimiento de los árboles, mientras que 
+                            las derivadas nos ayudan a encontrar tasas de cambio, puntos críticos y optimizar recursos 
+                            en proyectos de reforestación.
+                        <!-- Mathematical Applications -->
+                        <div class="row g-4 mt-4">
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <i class="bi bi-calculator text-primary fs-1 me-3 mt-2"></i>
+                                    <div>
+                                        <h5>Funciones de Crecimiento</h5>
+                                        <p class="text-muted">
+                                            Modelar la altura y diámetro de árboles en función del tiempo 
+                                            usando funciones exponenciales y logarítmicas.
+                                        </p>
+                                        <div class="bg-light p-3 rounded">
+                                            <code>h(t) = h₀ · e^(kt)</code>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <i class="bi bi-bar-chart text-success fs-1 me-3 mt-2"></i>
+                                    <div>
+                                        <h5>Derivadas para Optimización</h5>
+                                        <p class="text-muted">
+                                            Encontrar máximos y mínimos de funciones de costo, 
+                                            rendimiento y tasa de crecimiento.
+                                        </p>
+                                        <div class="bg-light p-3 rounded">
+                                            <code>dh/dt = k · h₀ · e^(kt)</code>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mathematical Models -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-primary">
+                Funciones y Derivadas en Reforestación
+            </h2>
+            <p class="lead text-muted">
+                Conceptos matemáticos aplicados al análisis de crecimiento y optimización forestal
+            </p>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Modelo de Crecimiento -->
+            <div class="col-lg-6">
+                <div class="card h-100 border-0 shadow">
+                    <div class="card-header bg-success text-white">
+                        <h4 class="mb-0">
+                            <i class="bi bi-graph-up-arrow me-2"></i>
+                            Función Exponencial de Crecimiento
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://placehold.co/400x200/28a745/ffffff?text=Funcion+Exponencial" 
+                             alt="Función Exponencial" class="img-fluid rounded mb-3">
+                        <h5>Función: h(t) = h₀ · e^(kt)</h5>
+                        <p>Donde:</p>
+                        <ul>
+                            <li><strong>h(t)</strong>: Altura en el tiempo t (metros)</li>
+                            <li><strong>h₀</strong>: Altura inicial (metros)</li>
+                            <li><strong>k</strong>: Constante de crecimiento</li>
+                            <li><strong>t</strong>: Tiempo (años)</li>
+                        </ul>
+                        <div class="bg-light p-3 rounded mt-3">
+                            <strong>Derivada (tasa de crecimiento):</strong>
+                            <br><code>dh/dt = k · h₀ · e^(kt) = k · h(t)</code>
+                        </div>
+                        <div class="alert alert-info mt-3 mb-0">
+                            <i class="bi bi-info-circle me-2"></i>
+                            La derivada nos indica la velocidad de crecimiento en cualquier momento
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modelo de Captura de CO2 -->
+            <div class="col-lg-6">
+                <div class="card h-100 border-0 shadow">
+                    <div class="card-header bg-info text-white">
+                        <h4 class="mb-0">
+                            <i class="bi bi-cloud-fill me-2"></i>
+                            Modelo de Captura de CO₂
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://placehold.co/400x200/17a2b8/ffffff?text=Captura+CO2+vs+Tiempo" 
+                             alt="Captura de CO2" class="img-fluid rounded mb-3">
+                        <h5>Fórmula: CO₂(t) = B(t) × 0.47 × 3.67</h5>
+                        <p>
+                            Donde:
+                        </p>
+                        <ul>
+                            <li><strong>B(t)</strong>: Biomasa seca en el tiempo t</li>
+                            <li><strong>0.47</strong>: Fracción de carbono en biomasa</li>
+                            <li><strong>3.67</strong>: Conversión C a CO₂</li>
+                        </ul>
+                        <div class="alert alert-success">
+                            <i class="bi bi-leaf me-2"></i>
+                            <strong>Impacto:</strong> Un árbol maduro puede capturar 
+                            entre 15-50 kg de CO₂ por año.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Optimización con Derivadas -->
+            <div class="col-lg-6">
+                <div class="card h-100 border-0 shadow">
+                    <div class="card-header bg-warning text-dark">
+                        <h4 class="mb-0">
+                            <i class="bi bi-gear-fill me-2"></i>
+                            Optimización con Derivadas
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://placehold.co/400x200/ffc107/000000?text=Punto+Critico" 
+                             alt="Optimización" class="img-fluid rounded mb-3">
+                        <h5>Encontrar máximos y mínimos</h5>
+                        <p><strong>Proceso:</strong></p>
+                        <ol>
+                            <li>Derivar la función: f'(x)</li>
+                            <li>Igualar a cero: f'(x) = 0</li>
+                            <li>Resolver para x (puntos críticos)</li>
+                            <li>Verificar con segunda derivada: f''(x)</li>
+                        </ol>
+                        <div class="bg-light p-3 rounded mt-3">
+                            <strong>Ejemplo de función de costo:</strong>
+                            <br><code>C(x) = 500x + 10000/x</code>
+                            <br><code>C'(x) = 500 - 10000/x²</code>
+                            <br><code>Óptimo: x = √20 ≈ 4.47</code>
+                        </div>
+                        <div class="alert alert-warning mt-3 mb-0">
+                            <i class="bi bi-exclamation-triangle me-2"></i>
+                            Las derivadas nos ayudan a minimizar costos y maximizar eficiencia
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Función Logística -->
+            <div class="col-lg-6">
+                <div class="card h-100 border-0 shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="mb-0">
+                            <i class="bi bi-graph-up me-2"></i>
+                            Función Logística (Crecimiento Limitado)
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://placehold.co/400x200/0066cc/ffffff?text=Curva+Logistica" 
+                             alt="Función Logística" class="img-fluid rounded mb-3">
+                        <h5>Función: P(t) = K / (1 + Ae^(-rt))</h5>
+                        <p>Donde:</p>
+                        <ul>
+                            <li><strong>K</strong>: Capacidad de carga (altura máxima)</li>
+                            <li><strong>A</strong>: Constante de desplazamiento</li>
+                            <li><strong>r</strong>: Tasa de crecimiento</li>
+                            <li><strong>t</strong>: Tiempo</li>
+                        </ul>
+                        <div class="bg-light p-3 rounded mt-3">
+                            <strong>Derivada (tasa instantánea):</strong>
+                            <br><code>dP/dt = rP(1 - P/K)</code>
+                        </div>
+                        <div class="alert alert-primary mt-3 mb-0">
+                            <i class="bi bi-info-circle me-2"></i>
+                            Modela el crecimiento real con recursos limitados
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Practical Applications -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="display-6 fw-bold text-primary mb-4">
+                    Aplicaciones Prácticas
+                </h2>
+                <div class="accordion" id="practicalApplications">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                                    data-bs-target="#collapse1">
+                                <i class="bi bi-1-circle-fill text-primary me-3"></i>
+                                Planificación del Espaciamiento
+                            </button>
+                        </h3>
+                        <div id="collapse1" class="accordion-collapse collapse show" 
+                             data-bs-parent="#practicalApplications">
+                            <div class="accordion-body">
+                                <p>Utilizamos geometría para determinar el espaciamiento óptimo:</p>
+                                <ul>
+                                    <li><strong>Plantación cuadrada:</strong> 3x3, 4x4 metros</li>
+                                    <li><strong>Plantación triangular:</strong> Mayor densidad, 15% más árboles</li>
+                                    <li><strong>Plantación en curvas de nivel:</strong> Para terrenos inclinados</li>
+                                </ul>
+                                <div class="bg-light p-3 rounded mt-3">
+                                    <strong>Ejemplo:</strong> En 1 hectárea con espaciamiento 3x3m:
+                                    <br>10,000 ÷ 9 = 1,111 árboles
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                    data-bs-target="#collapse2">
+                                <i class="bi bi-2-circle-fill text-success me-3"></i>
+                                Cálculo de Costos
+                            </button>
+                        </h3>
+                        <div id="collapse2" class="accordion-collapse collapse" 
+                             data-bs-parent="#practicalApplications">
+                            <div class="accordion-body">
+                                <p>Análisis económico integral del proyecto:</p>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Concepto</th>
+                                            <th>Costo Unitario</th>
+                                            <th>Por Hectárea</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Plántulas</td>
+                                            <td>$2.50 USD</td>
+                                            <td>$2,775 USD</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Preparación sitio</td>
+                                            <td>-</td>
+                                            <td>$800 USD</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Plantación</td>
+                                            <td>$0.75 USD</td>
+                                            <td>$833 USD</td>
+                                        </tr>
+                                        <tr class="table-success">
+                                            <td><strong>Total</strong></td>
+                                            <td>-</td>
+                                            <td><strong>$4,408 USD</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                    data-bs-target="#collapse3">
+                                <i class="bi bi-3-circle-fill text-info me-3"></i>
+                                Monitoreo Estadístico
+                            </button>
+                        </h3>
+                        <div id="collapse3" class="accordion-collapse collapse" 
+                             data-bs-parent="#practicalApplications">
+                            <div class="accordion-body">
+                                <p>Seguimiento cuantitativo del crecimiento forestal:</p>
+                                <ul>
+                                    <li><strong>Media aritmética:</strong> Altura promedio de árboles</li>
+                                    <li><strong>Desviación estándar:</strong> Variabilidad en crecimiento</li>
+                                    <li><strong>Coeficiente de variación:</strong> Homogeneidad del lote</li>
+                                    <li><strong>Regresión lineal:</strong> Tendencias de crecimiento</li>
+                                </ul>
+                                <div class="bg-info bg-opacity-10 p-3 rounded">
+                                    <strong>📊 Ejemplo de seguimiento:</strong>
+                                    <br>Medición mensual de altura y diámetro
+                                    <br>Análisis de correlación con factores climáticos
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://placehold.co/500x400/0066cc/ffffff?text=Aplicaciones+Matematicas" 
+                     alt="Aplicaciones Matemáticas" class="img-fluid rounded shadow-lg">
+                <!-- TODO: Reemplazar con infografía de aplicaciones matemáticas -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Interactive Calculator Preview -->
+<section class="py-5 bg-primary text-white">
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="display-5 fw-bold mb-4">
+                    <i class="bi bi-calculator me-3"></i>
+                    Pon en Práctica las Matemáticas
+                </h2>
+                <p class="lead mb-4">
+                    Utiliza nuestra calculadora para aplicar los conceptos matemáticos 
+                    en un proyecto real de reforestación.
+                </p>
+                <a href="../calculator.php" class="btn btn-light btn-lg">
+                    <i class="bi bi-arrow-right me-2"></i>
+                    Usar Calculadora
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tasks and Deliverables -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="text-primary mb-4">
+                    <i class="bi bi-list-check me-2"></i>
+                    Tareas Específicas
+                </h3>
+                <div class="list-group">
+                    <?php foreach($translations['subject_matematicas_tasks'] as $index => $task): ?>
+                    <div class="list-group-item d-flex align-items-start">
+                        <span class="badge bg-primary rounded-pill me-3 mt-1"><?php echo $index + 1; ?></span>
+                        <div>
+                            <p class="mb-1"><?php echo $task; ?></p>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <h3 class="text-success mb-4">
+                    <i class="bi bi-trophy me-2"></i>
+                    Objetivos de Aprendizaje
+                </h3>
+                <div class="card border-0 bg-white shadow">
+                    <div class="card-body">
+                        <p><strong>Objetivo General:</strong></p>
+                        <p class="text-muted"><?php echo $translations['subject_matematicas_objectives']; ?></p>
+                        
+                        <p class="mt-4"><strong>Metodología:</strong></p>
+                        <p class="text-muted"><?php echo $translations['subject_matematicas_methodology']; ?></p>
+                        
+                        <p class="mt-4"><strong>Entregables:</strong></p>
+                        <p class="text-muted"><?php echo $translations['subject_matematicas_deliverables']; ?></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php include '../includes/footer.php'; ?>
+
+<!-- TODO: Agregar gráficos interactivos con Chart.js -->
+<!-- TODO: Implementar ejercicios matemáticos interactivos -->
+<!-- TODO: Agregar simulador de crecimiento de árboles -->
+<!-- TODO: Incluir calculadora de análisis de supervivencia -->
