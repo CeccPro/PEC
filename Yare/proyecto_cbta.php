@@ -53,10 +53,8 @@ includeHeader(t('nav_cbta_project'), 'project');
         <div class="row">
             <div class="col-md-6">
                 <!-- TODO: Agregar mapa real del CBTA 35 con área señalada -->
-                <img src="https://placehold.co/600x400/8b6f47/ffffff?text=Mapa+CBTA+35" 
-                     class="img-fluid rounded shadow mb-3" 
-                     alt="Mapa del área">
-                <p class="text-center"><small><em>Imagen de referencia - Área propuesta para reforestación</em></small></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1914.3470548947355!2d-98.96118241521168!3d19.32735770469535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2smx!4v1764595540873!5m2!1ses-419!2smx" width="800" height="600" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                     class="img-fluid rounded shadow mb-3" alt="Mapa del área" style="width: 100%; height: 400px; margin=0;"></iframe>
             </div>
             <div class="col-md-6">
                 <div class="card mb-3">
