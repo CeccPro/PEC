@@ -90,13 +90,6 @@ includeHeader(t('nav_calculator'), 'calculator');
                                         </ul>
                                     </div>
                                 </div>
-                                
-                                <!-- TODO: Agregar visualización gráfica del espaciamiento -->
-                                <div class="mt-3 text-center">
-                                    <img id="spacingVisualization" src="https://placehold.co/400x300/5a7c3e/ffffff?text=Visualizacion+Espaciamiento" 
-                                         class="img-fluid rounded" 
-                                         alt="Visualización del espaciamiento">
-                                </div>
                             </div>
                         </div>
                     </div>

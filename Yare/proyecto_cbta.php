@@ -10,7 +10,7 @@ includeHeader(t('nav_cbta_project'), 'project');
 ?>
 
 <!-- Hero Section -->
-<section class="hero-section" style="background: linear-gradient(rgba(45, 80, 22, 0.7), rgba(90, 124, 62, 0.7)), url('https://placehold.co/1920x600/5a7c3e/ffffff?text=CBTA+35+Reforestacion'); background-size: cover; background-position: center;">
+<section class="hero-section" style="background: linear-gradient(rgba(45, 80, 22, 0.7), rgba(90, 124, 62, 0.7)), url('https://www.fundacionaquae.org/wp-content/uploads/2022/03/reforestar-e1646755472702-1024x512.jpg'); background-size: cover; background-position: center;">
     <div class="container">
         <h1 class="display-4 fw-bold mb-4"><?php echo t('cbta_title'); ?></h1>
         <p class="lead"><?php echo t('cbta_subtitle'); ?></p>

@@ -36,8 +36,9 @@ includeHeader(t('nav_academic_areas'), 'areas');
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6 order-md-2">
-                <img src="https://placehold.co/600x400/2d5016/ffffff?text=Matematicas+Forestales" 
+                <img src="https://a.storyblok.com/f/160385/99d4c71566/combo_mate.jpg/m/?w=256&q=100" 
                      class="img-fluid rounded shadow mb-3" 
+                     style="width: 800px; height: auto;"
                      alt="Matemáticas en Reforestación">
             </div>            <div class="col-md-6 order-md-1">
                 <h2 class="text-primary mb-4">
@@ -115,9 +116,10 @@ includeHeader(t('nav_academic_areas'), 'areas');
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
-                <img src="https://placehold.co/600x400/5a7c3e/ffffff?text=Humanidades+y+Cultura" 
-                     class="img-fluid rounded shadow mb-3" 
-                     alt="Humanidades">
+                <img src="https://www.bbva.com/wp-content/uploads/2022/03/reforestacio%CC%81n-.jpg" 
+                    class="img-fluid rounded shadow mb-3"
+                    style="width: 600px; height: auto;"
+                    alt="Humanidades">
             </div>            <div class="col-md-6">
                 <h2 class="text-success mb-4">
                     <i class="bi bi-book-fill"></i> Humanidades: Ética Ambiental
@@ -210,8 +212,9 @@ includeHeader(t('nav_academic_areas'), 'areas');
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6 order-md-2">
-                <img src="https://placehold.co/600x400/8b6f47/ffffff?text=Tecnologia+y+Programacion" 
+                <img src="https://geoinnova.org/wp-content/uploads/2021/08/sistema_plantacion.jpg" 
                      class="img-fluid rounded shadow mb-3" 
+                     style="width: 600px; height: auto;"
                      alt="Programación">
             </div>            <div class="col-md-6 order-md-1">
                 <h2 class="text-info mb-4">
@@ -366,7 +369,7 @@ $lang = isset($_COOKIE['lang']) ? $_COOKIE['lang'] : 'es';
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
-                <img src="https://placehold.co/600x400/a8c686/2d5016?text=Ecosistemas+Forestales" 
+                <img src="https://www.fundacionaquae.org/wp-content/uploads/2022/07/reforestacion.jpg" 
                      class="img-fluid rounded shadow mb-3" 
                      alt="Ecosistemas">
             </div>            <div class="col-md-6">
@@ -517,9 +520,10 @@ $lang = isset($_COOKIE['lang']) ? $_COOKIE['lang'] : 'es';
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6 order-md-2">
-                <img src="https://placehold.co/600x400/2d5016/ffffff?text=Comunicacion+Ambiental" 
-                     class="img-fluid rounded shadow mb-3" 
-                     alt="Comunicación">
+                <img src="https://www.wrm.org.uy/sites/default/files/styles/529_x_353_exactly/public/images/Editorial_5.jpg?itok=CAspI8aa" 
+                    class="img-fluid rounded shadow mb-3" 
+                    style="width: 600px; height: auto;"
+                    alt="Comunicación">
             </div>            <div class="col-md-6 order-md-1">
                 <h2 class="text-danger mb-4">
                     <i class="bi bi-chat-dots-fill"></i> Lengua y Comunicación: Redacción de Ensayos

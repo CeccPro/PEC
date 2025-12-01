@@ -196,7 +196,7 @@ function includeHeader($title, $activePage = 'home') {
             
             .hero-section {
                 background: linear-gradient(rgba(45, 80, 22, 0.7), rgba(90, 124, 62, 0.7)), 
-                            url('https://placehold.co/1920x600/2d5016/ffffff?text=Reforestacion');
+                            url('https://www.repsol.com/content/dam/repsol-complejos-industriales/cartagena/entorno-y-comunidad/bosque.jpg');
                 background-size: cover;
                 background-position: center;
                 color: white;

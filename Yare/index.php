@@ -38,7 +38,7 @@ includeHeader(t('nav_home'), 'home');
             </div>
             <div class="col-md-6">
                 <!-- TODO: Reemplazar con imágenes reales del proyecto -->
-                <img src="https://placehold.co/600x400/5a7c3e/ffffff?text=Bosque+Reforestado" 
+                <img style="width: 100%; height: auto;" src="https://www.iberdrola.com/documents/20125/40576/reforestacion_746x419.jpg/7ffde25d-e3a2-3e75-ba3d-b6e543dd0e24?t=1627463867254" 
                      class="img-fluid rounded shadow" 
                      alt="Bosque reforestado">
             </div>
@@ -117,7 +117,7 @@ includeHeader(t('nav_home'), 'home');
         <div class="row">
             <div class="col-lg-4 mb-4">
                 <div class="card h-100">
-                    <img src="https://placehold.co/400x250/a8c686/2d5016?text=Especies+Pioneras" 
+                    <img style="width: 93%; height: auto;" src="https://thumbs.dreamstime.com/b/especies-de-%C3%A1rboles-pioneros-en-la-alfombra-bog-nuevo-hampshire-dos-pioneras-esteras-picea-negra-mariana-y-tamarack-o-laricina-267947718.jpg" 
                          class="card-img-top" 
                          alt="Especies Pioneras">
                     <div class="card-body">
@@ -134,7 +134,7 @@ includeHeader(t('nav_home'), 'home');
             
             <div class="col-lg-4 mb-4">
                 <div class="card h-100">
-                    <img src="https://placehold.co/400x250/8b6f47/ffffff?text=Especies+Secundarias" 
+                    <img style="width: 93%; height: auto;" src="https://www.lifeder.com/wp-content/uploads/2020/03/Secondary_succesion_cm01_opt.jpg" 
                          class="card-img-top" 
                          alt="Especies Secundarias">
                     <div class="card-body">
@@ -151,7 +151,7 @@ includeHeader(t('nav_home'), 'home');
             
             <div class="col-lg-4 mb-4">
                 <div class="card h-100">
-                    <img src="https://placehold.co/400x250/2d5016/ffffff?text=Especies+Climax" 
+                    <img style="width: 93%; height: auto;" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Monte_del_Pardo2.jpg" 
                          class="card-img-top" 
                          alt="Especies Climax">
                     <div class="card-body">
@@ -257,7 +257,7 @@ includeHeader(t('nav_home'), 'home');
         <div class="row">
             <div class="col-md-12">
                 <!-- TODO: Agregar infografía de servicios ecosistémicos -->
-                <img src="https://placehold.co/1200x400/5a7c3e/ffffff?text=Servicios+Ecosistemicos" 
+                <img src="https://mx.fsc.org/sites/default/files/inline-images/SE.jpg" 
                      class="img-fluid rounded mb-4" 
                      alt="Servicios Ecosistémicos">
             </div>

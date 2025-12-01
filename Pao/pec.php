@@ -47,7 +47,7 @@
   </div>
   
   <header class="pec-header">
-    🌲 Reforestación Ambiental 🌲´
+    Reforestación Ambiental
     
   </header>
   <div id="demo" class="carousel slide" data-bs-ride="carousel">
