@@ -39,59 +39,72 @@ includeHeader(t('nav_academic_areas'), 'areas');
                 <img src="https://placehold.co/600x400/2d5016/ffffff?text=Matematicas+Forestales" 
                      class="img-fluid rounded shadow mb-3" 
                      alt="Matemáticas en Reforestación">
-            </div>
-            <div class="col-md-6 order-md-1">
+            </div>            <div class="col-md-6 order-md-1">
                 <h2 class="text-primary mb-4">
-                    <i class="bi bi-calculator-fill"></i> Matemáticas
+                    <i class="bi bi-calculator-fill"></i> Matemáticas: Funciones y Derivadas
                 </h2>
                 
-                <h4>Cálculo de Densidad de Plantación</h4>
-                <p>Las matemáticas son fundamentales para determinar cuántos árboles se pueden plantar en un área determinada. La fórmula básica es:</p>
+                <h4>Funciones en Reforestación</h4>
+                <p>Las funciones matemáticas modelan el comportamiento de variables forestales a lo largo del tiempo:</p>
                 
+                <h5 class="mt-3">Función de Crecimiento de Árboles</h5>
                 <div class="card bg-white mb-3">
                     <div class="card-body">
-                        <p class="text-center mb-0">
-                            <code>Árboles/ha = 10,000 / (espaciamiento_x × espaciamiento_y)</code>
-                        </p>
+                        <p class="mb-1"><code>h(t) = h_max × (1 - e<sup>-kt</sup>)</code></p>
+                        <p class="mb-0"><small>Donde h(t) es la altura en función del tiempo, h_max es la altura máxima, k es la tasa de crecimiento</small></p>
                     </div>
                 </div>
                 
-                <p><strong>Ejemplo:</strong> Para un espaciamiento de 3m × 3m:</p>
-                <p><code>10,000 / (3 × 3) = 1,111 árboles por hectárea</code></p>
+                <p><strong>Ejemplo:</strong> Un fresno con altura máxima de 25m y k = 0.15:</p>
+                <p><code>h(10) = 25 × (1 - e<sup>-0.15×10</sup>) = 25 × (1 - 0.223) ≈ 19.4 metros a los 10 años</code></p>
                 
-                <h4 class="mt-4">Estadística y Muestreo</h4>
-                <ul>
-                    <li><strong>Diseño de parcelas de monitoreo:</strong> Determinación del tamaño de muestra estadísticamente significativo</li>
-                    <li><strong>Análisis de supervivencia:</strong> Cálculo de porcentajes de mortalidad y tasas de crecimiento</li>
-                    <li><strong>Distribuciones de frecuencia:</strong> Análisis de clases diamétricas y altimétricas</li>
-                    <li><strong>Regresiones:</strong> Modelos de predicción de crecimiento y biomasa</li>
-                </ul>
-                
-                <h4 class="mt-4">Cálculo de Biomasa y Carbono</h4>
-                <p>Las ecuaciones alométricas relacionan el diámetro y altura de los árboles con su biomasa:</p>
-                
+                <h5 class="mt-3">Función de Densidad de Plantación</h5>
                 <div class="card bg-white mb-3">
                     <div class="card-body">
-                        <p class="mb-1"><code>Biomasa = a × DAP<sup>b</sup> × Altura<sup>c</sup></code></p>
-                        <p class="mb-0"><small>Donde a, b, c son coeficientes específicos por especie</small></p>
+                        <p class="mb-1"><code>D(e) = 10,000 / e²</code></p>
+                        <p class="mb-0"><small>Donde D es densidad (árboles/ha) y e es el espaciamiento en metros</small></p>
                     </div>
                 </div>
                 
-                <h4 class="mt-4">Geometría y Topografía</h4>
+                <h4 class="mt-4">Derivadas: Tasas de Cambio en Ecosistemas</h4>
+                <p>Las derivadas nos permiten analizar <strong>cómo cambian</strong> las variables forestales:</p>
+                
+                <h5 class="mt-3">Tasa de Crecimiento Instantánea</h5>
+                <div class="card bg-white mb-3">
+                    <div class="card-body">
+                        <p class="mb-1"><code>dh/dt = k × h_max × e<sup>-kt</sup></code></p>
+                        <p class="mb-0"><small>Esta derivada indica cuántos metros crece el árbol por año en un momento dado</small></p>
+                    </div>
+                </div>
+                
+                <p><strong>Interpretación:</strong> La derivada es máxima al inicio (crecimiento rápido juvenil) y disminuye con el tiempo (madurez).</p>
+                
+                <h5 class="mt-3">Tasa de Captura de CO₂</h5>
                 <ul>
-                    <li>Cálculo de áreas en terrenos irregulares</li>
-                    <li>Determinación de pendientes y curvas de nivel</li>
-                    <li>Diseño de terrazas para control de erosión</li>
-                    <li>Optimización de distribución espacial de árboles</li>
+                    <li>Si C(t) es la cantidad de CO₂ capturado en función del tiempo</li>
+                    <li>dC/dt representa la tasa de captura en toneladas por año</li>
+                    <li>Permite identificar el momento de máxima eficiencia de captura</li>
                 </ul>
                 
-                <h4 class="mt-4">Análisis Económico</h4>
+                <h5 class="mt-3">Optimización con Derivadas</h5>
+                <div class="card bg-light mb-3">
+                    <div class="card-body">
+                        <p><strong>Problema:</strong> ¿Cuál es el espaciamiento óptimo para maximizar captura de CO₂?</p>
+                        <p class="mb-0"><strong>Solución:</strong> Encontrar dónde la derivada de la función de captura total es cero (máximo local)</p>
+                    </div>
+                </div>
+                
+                <h4 class="mt-4">Aplicaciones Prácticas</h4>
                 <ul>
-                    <li><strong>Valor Presente Neto (VPN):</strong> Evaluación de rentabilidad a largo plazo</li>
-                    <li><strong>Tasa Interna de Retorno (TIR):</strong> Comparación entre alternativas de inversión</li>
-                    <li><strong>Análisis costo-beneficio:</strong> Cuantificación de servicios ecosistémicos</li>
-                    <li><strong>Flujos de caja:</strong> Proyección de ingresos y egresos temporales</li>
+                    <li><strong>Modelos de crecimiento:</strong> Funciones exponenciales, logísticas y polinomiales</li>
+                    <li><strong>Análisis de tendencias:</strong> Derivadas para identificar aceleración o desaceleración</li>
+                    <li><strong>Predicción:</strong> Usar funciones para proyectar desarrollo futuro</li>
+                    <li><strong>Puntos críticos:</strong> Determinar momentos óptimos para manejo (podas, raleos)</li>
                 </ul>
+                
+                <div class="alert alert-info mt-3">
+                    <strong>Conexión con el proyecto:</strong> Las calculadoras de este sitio utilizan funciones matemáticas para estimar densidades y captura de carbono, aplicando directamente los conceptos de funciones y sus derivadas.
+                </div>
             </div>
         </div>
     </div>
@@ -105,49 +118,87 @@ includeHeader(t('nav_academic_areas'), 'areas');
                 <img src="https://placehold.co/600x400/5a7c3e/ffffff?text=Humanidades+y+Cultura" 
                      class="img-fluid rounded shadow mb-3" 
                      alt="Humanidades">
-            </div>
-            <div class="col-md-6">
+            </div>            <div class="col-md-6">
                 <h2 class="text-success mb-4">
-                    <i class="bi bi-book-fill"></i> Humanidades
+                    <i class="bi bi-book-fill"></i> Humanidades: Ética Ambiental
                 </h2>
                 
-                <h4>Historia y Contexto Cultural</h4>
-                <p>Las humanidades nos permiten comprender el contexto histórico y cultural de la deforestación y reforestación:</p>
+                <h4>Ética y Responsabilidad Ambiental</h4>
+                <p>El estudio de la ética nos lleva a reflexionar profundamente sobre nuestra relación moral con el medio ambiente y las generaciones futuras:</p>
+                
+                <h5 class="mt-3">Principios Éticos en Reforestación</h5>
                 <ul>
-                    <li><strong>Historia ambiental:</strong> Análisis de patrones históricos de uso de suelo y deforestación</li>
-                    <li><strong>Conocimiento tradicional:</strong> Sistemas ancestrales de manejo forestal de comunidades indígenas</li>
-                    <li><strong>Cosmovisión:</strong> Relación espiritual y cultural con los bosques</li>
-                    <li><strong>Etnobotánica:</strong> Uso tradicional de especies forestales para medicina, alimentación y rituales</li>
+                    <li><strong>Principio de No Maleficencia:</strong> "No dañar" - Evitar acciones que degraden ecosistemas</li>
+                    <li><strong>Principio de Beneficencia:</strong> Obligación activa de mejorar y restaurar ecosistemas dañados</li>
+                    <li><strong>Principio de Justicia:</strong> Distribución equitativa de beneficios y cargas ambientales</li>
+                    <li><strong>Principio de Autonomía:</strong> Respeto a decisiones comunitarias sobre sus territorios</li>
                 </ul>
                 
-                <h4 class="mt-4">Ética Ambiental</h4>
-                <p>Reflexión sobre nuestra responsabilidad con el medio ambiente:</p>
+                <h4 class="mt-4">Dilemas Éticos en Proyectos de Reforestación</h4>
+                
+                <div class="card bg-light mb-3">
+                    <div class="card-body">
+                        <h6>Dilema 1: ¿Especies Nativas vs Exóticas de Rápido Crecimiento?</h6>
+                        <p class="small"><strong>Conflicto:</strong> Las especies exóticas capturan CO₂ más rápido, pero pueden amenazar biodiversidad nativa.</p>
+                        <p class="small mb-0"><strong>Análisis ético:</strong> ¿Priorizamos beneficio climático inmediato o integridad ecológica a largo plazo?</p>
+                    </div>
+                </div>
+                
+                <div class="card bg-light mb-3">
+                    <div class="card-body">
+                        <h6>Dilema 2: ¿Quién Decide el Uso de la Tierra?</h6>
+                        <p class="small"><strong>Conflicto:</strong> Autoridades quieren reforestar áreas que comunidades usan para cultivo.</p>
+                        <p class="small mb-0"><strong>Análisis ético:</strong> Balance entre necesidades actuales de subsistencia y conservación ambiental.</p>
+                    </div>
+                </div>
+                
+                <h4 class="mt-4">Justicia Intergeneracional</h4>
+                <p>Concepto central en ética ambiental:</p>
                 <ul>
-                    <li><strong>Justicia intergeneracional:</strong> Derecho de generaciones futuras a recursos naturales</li>
-                    <li><strong>Derechos de la naturaleza:</strong> Valor intrínseco de los ecosistemas más allá de utilidad humana</li>
-                    <li><strong>Equidad social:</strong> Distribución justa de beneficios de proyectos de reforestación</li>
-                    <li><strong>Responsabilidad histórica:</strong> Reconocimiento de deudas ecológicas coloniales</li>
+                    <li><strong>Definición:</strong> Las generaciones presentes tienen obligaciones morales hacia las futuras</li>
+                    <li><strong>Aplicación:</strong> Plantar árboles hoy para que personas no nacidas disfruten sus beneficios</li>
+                    <li><strong>Pregunta ética:</strong> ¿Tenemos derecho a agotar recursos que otros necesitarán?</li>
                 </ul>
                 
-                <h4 class="mt-4">Filosofía y Pensamiento Crítico</h4>
+                <h4 class="mt-4">Antropocentrismo vs Biocentrismo</h4>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card border-warning h-100">
+                            <div class="card-body">
+                                <h6>Antropocentrismo</h6>
+                                <p class="small">Valorar naturaleza por su utilidad para humanos</p>
+                                <p class="small mb-0"><em>Ej: Reforestar para oxígeno y madera</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card border-success h-100">
+                            <div class="card-body">
+                                <h6>Biocentrismo</h6>
+                                <p class="small">Reconocer valor intrínseco de toda vida</p>
+                                <p class="small mb-0"><em>Ej: Reforestar porque bosques tienen derecho a existir</em></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h4 class="mt-4">Responsabilidad Moral Individual y Colectiva</h4>
                 <ul>
-                    <li>Análisis crítico de modelos de desarrollo sostenible</li>
-                    <li>Cuestionamiento de paradigmas antropocéntricos</li>
-                    <li>Debate sobre conservación vs desarrollo</li>
-                    <li>Reflexión sobre relación sociedad-naturaleza</li>
+                    <li><strong>Responsabilidad individual:</strong> Cada persona tiene deber moral de cuidar el ambiente</li>
+                    <li><strong>Responsabilidad colectiva:</strong> Instituciones, gobiernos y empresas tienen mayor capacidad de impacto</li>
+                    <li><strong>Pregunta:</strong> ¿Es suficiente la acción individual o se requiere cambio sistémico?</li>
                 </ul>
                 
-                <h4 class="mt-4">Arte y Representación</h4>
-                <p>El arte como herramienta de concientización y documentación:</p>
+                <h4 class="mt-4">Ética del Cuidado Aplicada al Ambiente</h4>
+                <p>Perspectiva que enfatiza relaciones de cuidado y responsabilidad:</p>
                 <ul>
-                    <li>Fotografía documental de procesos de deforestación y restauración</li>
-                    <li>Arte ambiental y land art para sensibilización</li>
-                    <li>Murales y expresiones artísticas comunitarias</li>
-                    <li>Cine y documentales sobre crisis ambiental</li>
+                    <li>Ver naturaleza como parte de nuestra red de relaciones de cuidado</li>
+                    <li>Reconocer interdependencia entre humanos y ecosistemas</li>
+                    <li>Cultivar virtudes ambientales: frugalidad, respeto, gratitud</li>
                 </ul>
                 
                 <div class="alert alert-warning mt-4">
-                    <strong>Caso relevante:</strong> En muchas comunidades indígenas de México, los bosques son considerados entidades sagradas. El Proyecto Eden en Madagascar integró exitosamente valores culturales locales, generando empleos para >20,000 personas mientras restauraban 650,000 hectáreas.
+                    <strong>Reflexión ética:</strong> La deforestación global representa una crisis ética porque viola principios de no maleficencia, justicia intergeneracional y respeto a la vida. La reforestación es una respuesta ética a este daño, buscando reparar y restaurar lo que se ha perdido.
                 </div>
             </div>
         </div>
@@ -162,68 +213,149 @@ includeHeader(t('nav_academic_areas'), 'areas');
                 <img src="https://placehold.co/600x400/8b6f47/ffffff?text=Tecnologia+y+Programacion" 
                      class="img-fluid rounded shadow mb-3" 
                      alt="Programación">
-            </div>
-            <div class="col-md-6 order-md-1">
+            </div>            <div class="col-md-6 order-md-1">
                 <h2 class="text-info mb-4">
-                    <i class="bi bi-code-slash"></i> Programación y Tecnología
+                    <i class="bi bi-code-slash"></i> Programación: HTML, CSS y PHP
                 </h2>
                 
-                <h4>Sistemas de Información Geográfica (SIG)</h4>
-                <p>La programación permite crear herramientas avanzadas para el análisis espacial:</p>
-                <ul>
-                    <li><strong>Mapeo de áreas degradadas:</strong> Identificación de zonas prioritarias usando algoritmos de clasificación</li>
-                    <li><strong>Análisis de cobertura forestal:</strong> Procesamiento de imágenes satelitales con Python (GDAL, Rasterio)</li>
-                    <li><strong>Modelos predictivos:</strong> Machine Learning para predecir áreas de riesgo de deforestación</li>
-                    <li><strong>Visualización interactiva:</strong> Dashboards web con Leaflet, Mapbox o Google Earth Engine</li>
-                </ul>
+                <h4>HTML: Estructura del Contenido</h4>
+                <p>HTML (HyperText Markup Language) es el lenguaje fundamental para estructurar páginas web. Este proyecto utiliza HTML semántico:</p>
                 
                 <div class="card bg-white mb-3">
                     <div class="card-body">
-                        <h6>Ejemplo: Análisis con Python</h6>
-                        <pre class="mb-0"><code class="language-python"># Cálculo de NDVI para evaluar salud vegetal
-import rasterio
-import numpy as np
-
-def calculate_ndvi(nir_band, red_band):
-    ndvi = (nir_band - red_band) / (nir_band + red_band)
-    return ndvi
-</code></pre>
+                        <h6>Ejemplo: Estructura de una Sección</h6>
+                        <pre class="mb-0"><code class="language-html">&lt;section class="py-5"&gt;
+    &lt;div class="container"&gt;
+        &lt;h2&gt;Título de la Sección&lt;/h2&gt;
+        &lt;p&gt;Contenido sobre reforestación...&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Elemento de lista&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
                     </div>
                 </div>
                 
-                <h4 class="mt-4">Bases de Datos y Gestión de Información</h4>
+                <h5 class="mt-3">Elementos HTML Usados en el Proyecto</h5>
                 <ul>
-                    <li><strong>Inventarios forestales digitales:</strong> Sistemas para registro y seguimiento de árboles plantados</li>
-                    <li><strong>Bases de datos de especies:</strong> Catálogos con información ecológica, requerimientos, usos</li>
-                    <li><strong>Sistemas de monitoreo:</strong> Plataformas para captura de datos de campo con dispositivos móviles</li>
-                    <li><strong>Blockchain:</strong> Trazabilidad de carbono y certificaciones forestales</li>
+                    <li><strong>&lt;section&gt;:</strong> Organiza contenido temático (información, calculadoras, etc.)</li>
+                    <li><strong>&lt;nav&gt;:</strong> Menú de navegación principal</li>
+                    <li><strong>&lt;article&gt;:</strong> Contenido independiente y reutilizable</li>
+                    <li><strong>&lt;form&gt;:</strong> Formularios de login, registro y calculadoras</li>
+                    <li><strong>&lt;table&gt;:</strong> Tablas de datos (especies, presupuestos, cronogramas)</li>
                 </ul>
                 
-                <h4 class="mt-4">Sensores y IoT</h4>
-                <p>Internet de las Cosas aplicado al monitoreo forestal:</p>
+                <h4 class="mt-4">CSS: Diseño y Presentación</h4>
+                <p>CSS (Cascading Style Sheets) controla la apariencia visual del sitio:</p>
+                
+                <div class="card bg-white mb-3">
+                    <div class="card-body">
+                        <h6>Ejemplo: Variables CSS para Tema Verde</h6>
+                        <pre class="mb-0"><code class="language-css">:root {
+    --primary-green: #2d5016;
+    --secondary-green: #5a7c3e;
+    --light-green: #a8c686;
+}
+
+.btn-primary {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s;
+}</code></pre>
+                    </div>
+                </div>
+                
+                <h5 class="mt-3">Conceptos CSS Aplicados</h5>
                 <ul>
-                    <li>Sensores de humedad de suelo para riego inteligente</li>
-                    <li>Estaciones meteorológicas automáticas</li>
-                    <li>Cámaras trampa con IA para monitoreo de fauna</li>
-                    <li>Drones para mapeo y vigilancia forestal</li>
+                    <li><strong>Variables CSS:</strong> Colores reutilizables del tema ecológico</li>
+                    <li><strong>Flexbox & Grid:</strong> Layouts responsivos para diferentes dispositivos</li>
+                    <li><strong>Transiciones:</strong> Efectos suaves en hover de tarjetas</li>
+                    <li><strong>Media Queries:</strong> Adaptación a móviles y tablets</li>
+                    <li><strong>Bootstrap 5:</strong> Framework CSS para desarrollo rápido</li>
                 </ul>
                 
-                <h4 class="mt-4">Modelado y Simulación</h4>
+                <h4 class="mt-4">PHP: Lógica del Servidor</h4>
+                <p>PHP procesa la lógica del backend, maneja usuarios y genera contenido dinámico:</p>
+                
+                <div class="card bg-white mb-3">
+                    <div class="card-body">
+                        <h6>Ejemplo: Sistema de Autenticación</h6>
+                        <pre class="mb-0"><code class="language-php">&lt;?php
+// Verificar credenciales del usuario
+function loginUser($username, $password) {
+    $users = loadUsers(); // Cargar desde JSON
+    
+    foreach ($users as $user) {
+        if ($user['username'] === $username && 
+            password_verify($password, $user['password'])) {
+            $_SESSION['user_id'] = $user['id'];
+            return ['success' => true];
+        }
+    }
+    return ['success' => false];
+}
+?&gt;</code></pre>
+                    </div>
+                </div>
+                
+                <h5 class="mt-3">Funcionalidades PHP en el Proyecto</h5>
                 <ul>
-                    <li><strong>Modelos de crecimiento forestal:</strong> Simulaciones de desarrollo de plantaciones</li>
-                    <li><strong>Modelos climáticos:</strong> Predicción de impactos del cambio climático</li>
-                    <li><strong>Análisis de escenarios:</strong> Evaluación de diferentes estrategias de manejo</li>
-                    <li><strong>Optimización:</strong> Algoritmos para maximizar beneficios ecológicos y económicos</li>
+                    <li><strong>Sesiones:</strong> Mantener usuarios logueados mientras navegan</li>
+                    <li><strong>Cookies:</strong> Recordar preferencia de idioma y usuario</li>
+                    <li><strong>Hashing de passwords:</strong> Seguridad con bcrypt</li>
+                    <li><strong>Base de datos JSON:</strong> Almacenar usuarios sin SQL</li>
+                    <li><strong>Sistema multiidioma:</strong> Traducción dinámica de contenido</li>
+                    <li><strong>Inclusión de archivos:</strong> Reutilizar header y footer</li>
                 </ul>
                 
-                <h4 class="mt-4">Aplicaciones Web y Móviles</h4>
-                <p>Como este proyecto, la programación permite crear:</p>
+                <h4 class="mt-4">Integración HTML + CSS + PHP</h4>
+                <div class="card bg-light mb-3">
+                    <div class="card-body">
+                        <h6>Flujo Completo de una Página</h6>
+                        <ol class="small mb-0">
+                            <li><strong>PHP:</strong> Procesa lógica (verificar sesión, cargar idioma)</li>
+                            <li><strong>HTML:</strong> Genera estructura del contenido dinámicamente</li>
+                            <li><strong>CSS:</strong> Aplica estilos y diseño responsivo</li>
+                            <li><strong>JavaScript:</strong> Añade interactividad (calculadoras)</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <h5 class="mt-3">Ejemplo Completo: Botón de Cambio de Idioma</h5>
+                <div class="card bg-white mb-3">
+                    <div class="card-body">
+                        <p class="small mb-2"><strong>PHP - Lógica:</strong></p>
+                        <pre class="small mb-2"><code>&lt;?php 
+$lang = isset($_COOKIE['lang']) ? $_COOKIE['lang'] : 'es';
+?&gt;</code></pre>
+                        
+                        <p class="small mb-2"><strong>HTML - Estructura:</strong></p>
+                        <pre class="small mb-2"><code>&lt;a href="?lang=es" class="lang-btn"&gt;ES&lt;/a&gt;</code></pre>
+                        
+                        <p class="small mb-2"><strong>CSS - Diseño:</strong></p>
+                        <pre class="small mb-0"><code>.lang-btn {
+    padding: 5px 10px;
+    background: rgba(255,255,255,0.2);
+}</code></pre>
+                    </div>
+                </div>
+                
+                <h4 class="mt-4">Herramientas de Desarrollo</h4>
                 <ul>
-                    <li>Calculadoras de reforestación interactivas</li>
-                    <li>Plataformas de educación ambiental</li>
-                    <li>Sistemas de gestión de voluntarios</li>
-                    <li>Apps móviles para identificación de especies</li>
+                    <li><strong>VS Code:</strong> Editor recomendado con extensiones PHP/HTML</li>
+                    <li><strong>XAMPP:</strong> Servidor local Apache + PHP para pruebas</li>
+                    <li><strong>Bootstrap 5:</strong> Framework CSS para diseño rápido</li>
+                    <li><strong>Bootstrap Icons:</strong> Iconografía profesional</li>
+                    <li><strong>DevTools:</strong> Inspector del navegador para debugging</li>
                 </ul>
+                
+                <div class="alert alert-info mt-3">
+                    <strong>Proyecto práctico:</strong> Este sitio web completo está construido con HTML, CSS y PHP, demostrando cómo estos lenguajes trabajan juntos para crear una aplicación web funcional con autenticación, multiidioma y calculadoras interactivas.
+                </div>
             </div>
         </div>
     </div>
@@ -237,78 +369,144 @@ def calculate_ndvi(nir_band, red_band):
                 <img src="https://placehold.co/600x400/a8c686/2d5016?text=Ecosistemas+Forestales" 
                      class="img-fluid rounded shadow mb-3" 
                      alt="Ecosistemas">
-            </div>
-            <div class="col-md-6">
+            </div>            <div class="col-md-6">
                 <h2 class="text-warning mb-4">
-                    <i class="bi bi-flower1"></i> Estudio de Ecosistemas
+                    <i class="bi bi-flower1"></i> Estudio de Ecosistemas: Especímenes Vegetales
                 </h2>
                 
-                <h4>Ecología Forestal</h4>
-                <p>El conocimiento profundo de los ecosistemas es esencial para el éxito de la reforestación:</p>
+                <h4>Identificación y Clasificación de Especímenes</h4>
+                <p>El estudio de especímenes vegetales es fundamental para proyectos de reforestación exitosos:</p>
                 
-                <h5 class="mt-3">Sucesión Ecológica</h5>
-                <p>Comprensión de las etapas naturales de desarrollo forestal:</p>
+                <h5 class="mt-3">Morfología Vegetal</h5>
+                <p>Características observables para identificar especies:</p>
                 <ul>
-                    <li>Colonización inicial por especies pioneras (alta luminosidad)</li>
-                    <li>Establecimiento de especies secundarias (sombra parcial)</li>
-                    <li>Desarrollo de bosque maduro con especies clímax</li>
-                    <li>Ciclos de perturbación y regeneración natural</li>
-                </ul>
-                
-                <h5 class="mt-3">Interacciones Bióticas</h5>
-                <ul>
-                    <li><strong>Simbiosis:</strong> Micorrizas (hongos-raíces), rizobios (fijación de nitrógeno)</li>
-                    <li><strong>Polinización:</strong> Relaciones específicas planta-polinizador</li>
-                    <li><strong>Dispersión:</strong> Aves, mamíferos e insectos como dispersores de semillas</li>
-                    <li><strong>Herbivoría:</strong> Control de plagas y equilibrio poblacional</li>
-                    <li><strong>Depredación:</strong> Regulación de cadenas tróficas</li>
-                </ul>
-                
-                <h4 class="mt-4">Edafología (Ciencia del Suelo)</h4>
-                <p>El suelo es la base de todo proyecto de reforestación exitoso:</p>
-                <ul>
-                    <li><strong>Propiedades físicas:</strong> Textura, estructura, densidad, porosidad, capacidad de retención de agua</li>
-                    <li><strong>Propiedades químicas:</strong> pH, nutrientes (N, P, K), materia orgánica, CIC</li>
-                    <li><strong>Propiedades biológicas:</strong> Microorganismos, mesofauna, macrofauna del suelo</li>
-                    <li><strong>Degradación:</strong> Compactación, erosión, pérdida de horizontes, contaminación</li>
+                    <li><strong>Hojas:</strong> Forma (lanceolada, ovalada, compuesta), borde (entero, serrado), venación, filotaxia</li>
+                    <li><strong>Tallo:</strong> Tipo (herbáceo, leñoso), corteza, lenticelas, médula</li>
+                    <li><strong>Flores:</strong> Simetría, número de pétalos, tipo de inflorescencia</li>
+                    <li><strong>Frutos y semillas:</strong> Tipo (drupa, legumbre, cápsula), dispersión</li>
+                    <li><strong>Raíces:</strong> Pivotante, fasciculada, adventicias</li>
                 </ul>
                 
                 <div class="card bg-light mb-3">
                     <div class="card-body">
-                        <h6>Valores óptimos para reforestación:</h6>
-                        <ul class="mb-0">
-                            <li>pH: 5.5 - 7.0 (ligeramente ácido a neutro)</li>
-                            <li>Materia orgánica: > 3%</li>
-                            <li>Nitrógeno total: > 0.15%</li>
-                            <li>Fósforo disponible: 10-30 ppm</li>
+                        <h6>Ejemplo: Identificación de <em>Fraxinus uhdei</em> (Fresno)</h6>
+                        <ul class="small mb-0">
+                            <li><strong>Hojas:</strong> Compuestas, imparipinnadas, 5-9 foliolos</li>
+                            <li><strong>Foliolos:</strong> Lanceolados, margen serrado, 6-12 cm</li>
+                            <li><strong>Corteza:</strong> Gris-parda, fisurada en árboles maduros</li>
+                            <li><strong>Fruto:</strong> Sámara alada (dispersión por viento)</li>
                         </ul>
                     </div>
                 </div>
                 
-                <h4 class="mt-4">Hidrología Forestal</h4>
+                <h4 class="mt-4">Técnicas de Recolección y Preservación</h4>
+                
+                <h5 class="mt-3">Recolección de Especímenes</h5>
+                <div class="card bg-white mb-3">
+                    <div class="card-body">
+                        <h6>Materiales Necesarios:</h6>
+                        <ul class="small">
+                            <li>Tijeras de podar o navaja</li>
+                            <li>Prensa botánica o periódicos</li>
+                            <li>Libreta de campo y lápiz</li>
+                            <li>Bolsas de papel o plástico perforado</li>
+                            <li>GPS o ubicación aproximada</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h5 class="mt-3">Proceso de Herborización</h5>
+                <ol>
+                    <li><strong>Recolectar:</strong> Obtener muestra completa (hojas, flores/frutos si hay, parte de tallo)</li>
+                    <li><strong>Prensar:</strong> Colocar entre papeles absorbentes con peso uniforme</li>
+                    <li><strong>Secar:</strong> Cambiar papeles diariamente por 7-10 días</li>
+                    <li><strong>Montar:</strong> Fijar espécimen seco en cartulina con cinta o pegamento</li>
+                    <li><strong>Etiquetar:</strong> Datos completos (especie, ubicación, fecha, colector)</li>
+                </ol>
+                
+                <h4 class="mt-4">Anatomía Vegetal</h4>
+                <p>Estudio de estructuras internas (requiere microscopio):</p>
                 <ul>
-                    <li>Intercepción de lluvia por dosel forestal (10-40%)</li>
-                    <li>Infiltración y recarga de acuíferos</li>
-                    <li>Transpiración y regulación de humedad atmosférica</li>
-                    <li>Control de escorrentía y prevención de inundaciones</li>
+                    <li><strong>Tejidos meristemáticos:</strong> Crecimiento apical y lateral</li>
+                    <li><strong>Xilema:</strong> Transporte de agua y minerales</li>
+                    <li><strong>Floema:</strong> Transporte de azúcares</li>
+                    <li><strong>Estomas:</strong> Intercambio gaseoso en hojas</li>
+                    <li><strong>Tricomas:</strong> Pelos protectores</li>
                 </ul>
                 
-                <h4 class="mt-4">Selección de Especies</h4>
-                <p>Criterios ecológicos para elegir especies apropiadas:</p>
+                <h4 class="mt-4">Claves Taxonómicas</h4>
+                <p>Herramientas dicotómicas para identificación:</p>
+                
+                <div class="card bg-white mb-3">
+                    <div class="card-body">
+                        <h6>Ejemplo de Clave Simplificada:</h6>
+                        <pre class="small mb-0">1a. Hojas simples ...................... ir a 2
+1b. Hojas compuestas ................... ir a 3
+
+2a. Hojas con margen entero ............ Schinus molle
+2b. Hojas con margen dentado ........... Quercus rugosa
+
+3a. Hojas bipinnadas ................... Acacia farnesiana
+3b. Hojas pinnadas ..................... Fraxinus uhdei</pre>
+                    </div>
+                </div>
+                
+                <h4 class="mt-4">Adaptaciones Ecológicas</h4>
+                <p>Relación entre estructura y función en diferentes ambientes:</p>
                 <ul>
-                    <li><strong>Especies nativas:</strong> Adaptadas evolutivamente al clima y suelo local</li>
-                    <li><strong>Requerimientos ecológicos:</strong> Luz, agua, nutrientes, temperatura</li>
-                    <li><strong>Funciones ecosistémicas:</strong> Fijación de nitrógeno, atracción de fauna, protección del suelo</li>
-                    <li><strong>Resiliencia:</strong> Capacidad de adaptación al cambio climático</li>
+                    <li><strong>Xerofitas:</strong> Hojas reducidas, cutícula gruesa (adaptación a sequía)</li>
+                    <li><strong>Mesofitas:</strong> Hojas normales, ambiente moderado</li>
+                    <li><strong>Hidrofitas:</strong> Aerénquima, adaptación a ambientes acuáticos</li>
+                    <li><strong>Esclerofitas:</strong> Hojas duras y coriáceas</li>
                 </ul>
                 
-                <h4 class="mt-4">Monitoreo de Biodiversidad</h4>
+                <h4 class="mt-4">Especies Nativas Importantes para Reforestación</h4>
+                <div class="table-responsive">
+                    <table class="table table-sm table-bordered">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Especie</th>
+                                <th>Nombre Común</th>
+                                <th>Características Distintivas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><em>Fraxinus uhdei</em></td>
+                                <td>Fresno</td>
+                                <td>Hojas compuestas, sámaras aladas</td>
+                            </tr>
+                            <tr>
+                                <td><em>Quercus rugosa</em></td>
+                                <td>Encino</td>
+                                <td>Hojas coriáceas, bellotas</td>
+                            </tr>
+                            <tr>
+                                <td><em>Schinus molle</em></td>
+                                <td>Pirul</td>
+                                <td>Hojas pinnadas aromáticas, frutos rosados</td>
+                            </tr>
+                            <tr>
+                                <td><em>Acacia farnesiana</em></td>
+                                <td>Huizache</td>
+                                <td>Hojas bipinnadas, flores amarillas fragantes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <h4 class="mt-4">Aplicación Práctica en Reforestación</h4>
                 <ul>
-                    <li>Índices de diversidad (Shannon, Simpson, Margalef)</li>
-                    <li>Especies indicadoras de calidad de hábitat</li>
-                    <li>Presencia de especies clave (keystone species)</li>
-                    <li>Conectividad de hábitats y corredores biológicos</li>
+                    <li><strong>Inventarios:</strong> Identificar especies existentes antes de plantar</li>
+                    <li><strong>Selección:</strong> Elegir especies compatibles con el ecosistema</li>
+                    <li><strong>Propagación:</strong> Conocer tipo de fruto/semilla para reproducción</li>
+                    <li><strong>Monitoreo:</strong> Verificar identidad de plántulas y crecimiento</li>
+                    <li><strong>Educación:</strong> Crear herbarios educativos en escuelas</li>
                 </ul>
+                
+                <div class="alert alert-success mt-3">
+                    <strong>Actividad sugerida:</strong> Crear un herbario del CBTA 35 recolectando y preservando especímenes de las especies que se plantarán en el proyecto de reforestación. Esto servirá como material educativo permanente.
+                </div>
             </div>
         </div>
     </div>
@@ -322,79 +520,136 @@ def calculate_ndvi(nir_band, red_band):
                 <img src="https://placehold.co/600x400/2d5016/ffffff?text=Comunicacion+Ambiental" 
                      class="img-fluid rounded shadow mb-3" 
                      alt="Comunicación">
-            </div>
-            <div class="col-md-6 order-md-1">
+            </div>            <div class="col-md-6 order-md-1">
                 <h2 class="text-danger mb-4">
-                    <i class="bi bi-chat-dots-fill"></i> Lengua y Comunicación
+                    <i class="bi bi-chat-dots-fill"></i> Lengua y Comunicación: Redacción de Ensayos
                 </h2>
                 
-                <h4>Comunicación Científica</h4>
-                <p>La comunicación efectiva es crucial para el éxito del proyecto de reforestación:</p>
-                <ul>
-                    <li><strong>Redacción de informes técnicos:</strong> Documentación de metodologías, resultados y conclusiones</li>
-                    <li><strong>Publicaciones científicas:</strong> Difusión de hallazgos en revistas especializadas</li>
-                    <li><strong>Propuestas de financiamiento:</strong> Solicitudes a fondos nacionales e internacionales</li>
-                    <li><strong>Estilo APA:</strong> Formato estandarizado para referencias bibliográficas</li>
-                </ul>
+                <h4>El Ensayo como Herramienta de Análisis</h4>
+                <p>La redacción de ensayos permite explorar, argumentar y comunicar ideas sobre temas ambientales de forma estructurada y persuasiva:</p>
                 
-                <h4 class="mt-4">Divulgación y Educación Ambiental</h4>
-                <p>Traducir conocimiento técnico a lenguaje accesible:</p>
-                <ul>
-                    <li><strong>Materiales educativos:</strong> Folletos, infografías, videos explicativos</li>
-                    <li><strong>Talleres comunitarios:</strong> Capacitación en técnicas de plantación y cuidado</li>
-                    <li><strong>Campañas de sensibilización:</strong> Redes sociales, medios tradicionales</li>
-                    <li><strong>Interpretación ambiental:</strong> Señalética y guías en áreas reforestadas</li>
-                </ul>
-                
-                <h4 class="mt-4">Comunicación Intercultural</h4>
-                <ul>
-                    <li><strong>Trabajo con comunidades indígenas:</strong> Respeto a lenguas y cosmovisiones locales</li>
-                    <li><strong>Traducción de materiales:</strong> Idiomas locales para inclusión</li>
-                    <li><strong>Diálogo de saberes:</strong> Integración de conocimiento tradicional y científico</li>
-                    <li><strong>Mediación de conflictos:</strong> Resolución de disputas por uso de recursos</li>
-                </ul>
-                
-                <h4 class="mt-4">Narrativas y Storytelling</h4>
-                <p>Las historias generan empatía y motivación:</p>
-                <ul>
-                    <li>Testimonios de comunidades beneficiadas</li>
-                    <li>Historias de éxito de proyectos de reforestación</li>
-                    <li>Narrativas de transformación de paisajes degradados</li>
-                    <li>Documentación audiovisual del proceso</li>
-                </ul>
-                
+                <h5 class="mt-3">Estructura del Ensayo</h5>
                 <div class="card bg-white mb-3">
                     <div class="card-body">
-                        <h6>Ejemplo de comunicación efectiva:</h6>
-                        <p><strong>Técnico:</strong> "Incrementamos la cobertura forestal en 15% mediante plantación sistemática de especies nativas con densidad de 1,111 ind/ha."</p>
-                        <p class="mb-0"><strong>Divulgativo:</strong> "Gracias a la participación de 50 familias, plantamos más de 20,000 árboles nativos que están recuperando nuestro bosque y ofreciendo sombra y aire limpio para todos."</p>
+                        <ol class="mb-0">
+                            <li><strong>Introducción:</strong> Presenta el tema, contexto y tesis principal</li>
+                            <li><strong>Desarrollo:</strong> Argumentos con evidencia que sostienen la tesis</li>
+                            <li><strong>Conclusión:</strong> Síntesis de argumentos y reflexión final</li>
+                        </ol>
                     </div>
                 </div>
                 
-                <h4 class="mt-4">Gestión de Participación</h4>
+                <h4 class="mt-4">Tipos de Ensayos Aplicados a Reforestación</h4>
+                
+                <h5 class="mt-3">1. Ensayo Expositivo</h5>
+                <div class="card bg-light mb-3">
+                    <div class="card-body">
+                        <p class="small mb-1"><strong>Objetivo:</strong> Explicar e informar sobre un tema</p>
+                        <p class="small mb-1"><strong>Ejemplo de título:</strong> "Los Procesos de Sucesión Ecológica en la Reforestación"</p>
+                        <p class="small mb-0"><strong>Enfoque:</strong> Presenta información objetiva, sin argumentar posición personal</p>
+                    </div>
+                </div>
+                
+                <h5 class="mt-3">2. Ensayo Argumentativo</h5>
+                <div class="card bg-light mb-3">
+                    <div class="card-body">
+                        <p class="small mb-1"><strong>Objetivo:</strong> Defender una postura con argumentos sólidos</p>
+                        <p class="small mb-1"><strong>Ejemplo de título:</strong> "Por Qué Debemos Priorizar Especies Nativas sobre Exóticas en Proyectos de Reforestación"</p>
+                        <p class="small mb-0"><strong>Enfoque:</strong> Tesis clara + argumentos + contraargumentos refutados + evidencia científica</p>
+                    </div>
+                </div>
+                
+                <h5 class="mt-3">3. Ensayo Crítico</h5>
+                <div class="card bg-light mb-3">
+                    <div class="card-body">
+                        <p class="small mb-1"><strong>Objetivo:</strong> Analizar y evaluar críticamente un tema</p>
+                        <p class="small mb-1"><strong>Ejemplo de título:</strong> "Análisis Crítico de las Políticas de Reforestación en México: Aciertos y Limitaciones"</p>
+                        <p class="small mb-0"><strong>Enfoque:</strong> Evalúa fortalezas y debilidades, propone mejoras</p>
+                    </div>
+                </div>
+                
+                <h5 class="mt-3">4. Ensayo Narrativo-Reflexivo</h5>
+                <div class="card bg-light mb-3">
+                    <div class="card-body">
+                        <p class="small mb-1"><strong>Objetivo:</strong> Combinar experiencia personal con reflexión profunda</p>
+                        <p class="small mb-1"><strong>Ejemplo de título:</strong> "Mi Experiencia Plantando Árboles: Una Reflexión sobre Nuestra Conexión con la Naturaleza"</p>
+                        <p class="small mb-0"><strong>Enfoque:</strong> Primera persona, narración + análisis personal</p>
+                    </div>
+                </div>
+                
+                <h4 class="mt-4">Elementos de un Buen Ensayo</h4>
+                
+                <h5 class="mt-3">Tesis Clara y Contundente</h5>
+                <div class="card bg-white mb-3">
+                    <div class="card-body">
+                        <p class="small mb-2"><strong>❌ Débil:</strong> "La reforestación es importante."</p>
+                        <p class="small mb-0"><strong>✓ Fuerte:</strong> "La reforestación con especies nativas representa la estrategia más efectiva para restaurar ecosistemas degradados porque promueve biodiversidad, resilencia climática y beneficios socioculturales a largo plazo."</p>
+                    </div>
+                </div>
+                
+                <h5 class="mt-3">Argumentación Sólida</h5>
                 <ul>
-                    <li><strong>Consultas públicas:</strong> Espacios de diálogo con comunidades locales</li>
-                    <li><strong>Facilitación de reuniones:</strong> Técnicas de moderación inclusiva</li>
-                    <li><strong>Negociación:</strong> Acuerdos de uso de tierra y distribución de beneficios</li>
-                    <li><strong>Rendición de cuentas:</strong> Informes transparentes para stakeholders</li>
+                    <li><strong>Evidencia científica:</strong> Citas de estudios, estadísticas, datos verificables</li>
+                    <li><strong>Ejemplos concretos:</strong> Casos de éxito o fracaso documentados</li>
+                    <li><strong>Razonamiento lógico:</strong> Conexión clara entre premisas y conclusiones</li>
+                    <li><strong>Contraargumentos:</strong> Anticipar objeciones y refutarlas</li>
                 </ul>
                 
-                <h4 class="mt-4">Comunicación Política</h4>
+                <h5 class="mt-3">Cohesión y Coherencia</h5>
+                <div class="card bg-white mb-3">
+                    <div class="card-body">
+                        <p class="small mb-1"><strong>Conectores argumentativos:</strong></p>
+                        <ul class="small mb-0">
+                            <li><em>Para añadir:</em> además, asimismo, por otra parte</li>
+                            <li><em>Para contrastar:</em> sin embargo, no obstante, por el contrario</li>
+                            <li><em>Para ejemplificar:</em> por ejemplo, es decir, así como</li>
+                            <li><em>Para concluir:</em> en conclusión, finalmente, en síntesis</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h4 class="mt-4">Proceso de Escritura</h4>
+                <ol>
+                    <li><strong>Planeación:</strong> Investigar, delimitar tema, formular tesis</li>
+                    <li><strong>Esquema:</strong> Organizar ideas en estructura lógica</li>
+                    <li><strong>Primer borrador:</strong> Escribir sin preocuparse por perfección</li>
+                    <li><strong>Revisión de contenido:</strong> Verificar argumentos, evidencia, coherencia</li>
+                    <li><strong>Revisión de forma:</strong> Ortografía, gramática, puntuación, estilo</li>
+                    <li><strong>Versión final:</strong> Pulir detalles, verificar formato</li>
+                </ol>
+                
+                <h4 class="mt-4">Formato APA para Referencias</h4>
+                <div class="card bg-white mb-3">
+                    <div class="card-body">
+                        <h6>Ejemplos de Referencias:</h6>
+                        <p class="small mb-1"><strong>Libro:</strong></p>
+                        <p class="small mb-2"><em>Chazdon, R. L. (2008). Second growth: the promise of tropical forest regeneration in an age of deforestation. University of Chicago Press.</em></p>
+                        
+                        <p class="small mb-1"><strong>Artículo de revista:</strong></p>
+                        <p class="small mb-0"><em>Pan, Y., Birdsey, R. A., Fang, J., et al. (2011). A large and persistent carbon sink in the world's forests. Science, 333(6045), 988-993.</em></p>
+                    </div>
+                </div>
+                
+                <h4 class="mt-4">Temas de Ensayo Sugeridos sobre Reforestación</h4>
                 <ul>
-                    <li>Cabildeo para políticas favorables a reforestación</li>
-                    <li>Argumentación basada en evidencia para tomadores de decisión</li>
-                    <li>Alianzas estratégicas con sectores público, privado y social</li>
-                    <li>Posicionamiento de agenda ambiental en espacios públicos</li>
+                    <li>"La Responsabilidad Ética de las Generaciones Actuales en la Reforestación"</li>
+                    <li>"Análisis Comparativo: Reforestación con Especies Nativas vs. Exóticas"</li>
+                    <li>"El Rol de la Educación Ambiental en Proyectos de Reforestación Comunitaria"</li>
+                    <li>"Cambio Climático y Urgencia de la Reforestación: Una Perspectiva Crítica"</li>
+                    <li>"Mi Visión para un CBTA 35 más Verde: Propuesta de Reforestación Estudiantil"</li>
                 </ul>
                 
-                <h4 class="mt-4">Comunicación Digital</h4>
-                <p>Aprovechamiento de tecnologías para amplificar mensajes:</p>
+                <h4 class="mt-4">Estilo y Voz en Ensayos Académicos</h4>
                 <ul>
-                    <li><strong>Redes sociales:</strong> Facebook, Instagram, Twitter para difusión masiva</li>
-                    <li><strong>Sitios web:</strong> Como este proyecto, centralizando información y herramientas</li>
-                    <li><strong>Webinars y conferencias virtuales:</strong> Capacitación a distancia</li>
-                    <li><strong>Storytelling multimedia:</strong> Combinación de texto, imagen, video, audio</li>
+                    <li><strong>Tono formal:</strong> Evitar jerga coloquial, usar vocabulario académico</li>
+                    <li><strong>Objetividad:</strong> Presentar argumentos balanceados, no solo emocionales</li>
+                    <li><strong>Tercera persona:</strong> "Se argumenta que..." en lugar de "Yo pienso que..."</li>
+                    <li><strong>Voz activa:</strong> Preferir "Los investigadores demostraron" sobre "Fue demostrado"</li>
                 </ul>
+                
+                <div class="alert alert-info mt-3">
+                    <strong>Ejercicio práctico:</strong> Redacta un ensayo argumentativo de 500-800 palabras sobre "La Importancia de Incluir la Reforestación en el Currículo Escolar del CBTA 35", utilizando información de este sitio web como evidencia.
+                </div>
             </div>
         </div>
     </div>

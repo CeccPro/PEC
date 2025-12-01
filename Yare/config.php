@@ -362,7 +362,7 @@ function includeFooter() {
                         <h5><?php echo t('footer_contact'); ?></h5>
                         <p>
                             <i class="bi bi-geo-alt-fill"></i> CBTA 35<br>
-                            <i class="bi bi-envelope-fill"></i> info@reforestacion-cbta35.edu.mx<br>
+                            <i class="bi bi-envelope-fill"></i> lorem_ipsum@dolor-sit-amet.com<br> <!-- Ufff, tremendo correo electrónico xD -->
                             <!-- TODO: Agregar información de contacto real -->
                         </p>
                     </div>
